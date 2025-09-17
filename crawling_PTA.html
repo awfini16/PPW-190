@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Crawling PTA &#8212; My sample book</title>
+    <title>Crawling PTA &#8212; Awfini Hilma</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'crawling_PTA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Crawling Link" href="PPWCrawlingLink.html" />
+    <link rel="next" title="Crawling Berita" href="crawlingh_berita.html" />
     <link rel="prev" title="Pengantar Web Mining" href="tugas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -148,8 +148,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/foto1.jpeg" class="logo__image only-light" alt="Awfini Hilma - Home"/>
+    <script>document.write(`<img src="_static/foto1.jpeg" class="logo__image only-dark" alt="Awfini Hilma - Home"/>`);</script>
   
-    <p class="title logo__title">My sample book</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -176,6 +182,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Web Mining</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling PTA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawlingh_berita.html">Crawling Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PPWCrawlingLink.html">Crawling Link</a></li>
 
 
@@ -471,6 +478,12 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 4
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 5
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 6
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">71</span>
@@ -478,12 +491,12 @@ document.write(`
 <span class="g g-Whitespace">     </span><span class="mi">70</span> <span class="c1"># Jalankan fungsi</span>
 <span class="ne">---&gt; </span><span class="mi">71</span> <span class="n">pta_KaryaIlmiah</span><span class="p">()</span>
 
-<span class="nn">Cell In[1], line 39,</span> in <span class="ni">pta_KaryaIlmiah</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">for</span> <span class="n">jurnal</span> <span class="ow">in</span> <span class="n">jurnals</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">38</span>     <span class="n">detail_url</span> <span class="o">=</span> <span class="n">jurnal</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;a.gray.button&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
-<span class="ne">---&gt; </span><span class="mi">39</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">detail_url</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">40</span>     <span class="n">soup1</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">42</span>     <span class="n">isi</span> <span class="o">=</span> <span class="n">soup1</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;div#content_journal&#39;</span><span class="p">)</span>
+<span class="nn">Cell In[1], line 26,</span> in <span class="ni">pta_KaryaIlmiah</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://pta.trunojoyo.ac.id/c_search/byprod/</span><span class="si">{</span><span class="n">prodi_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">26</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>     <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>     <span class="n">jurnals</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;li[data-cat=&quot;#luxury&quot;]&#39;</span><span class="p">)</span>
 
 <span class="nn">File ~/.local/lib/python3.12/site-packages/requests/api.py:73,</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -660,11 +673,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="PPWCrawlingLink.html"
+       href="crawlingh_berita.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Crawling Link</p>
+        <p class="prev-next-title">Crawling Berita</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -684,7 +697,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Awfini Hilma 22-190
 </p>
 
   </div>
