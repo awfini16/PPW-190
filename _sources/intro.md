@@ -1,11 +1,6 @@
-# Welcome to your Jupyter Book
+# Profil
+## Awfini Hilma-220411100190
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
 
-Check out the content pages bundled with this sample book to see more.
+Panggilan nama saya Hilma, lahir di Sumenep pada 16 Desember 2003. Saya berasal dari Kepulauan Kangean dan memiliki hobi berenang. Saya anak ke-2 dari 4 bersaudara. Pendidikan saya dimulai dari TK AL-Hidayah, SDN Arjasa 1, MTS AL-Hidayah, lalu melanjutkan ke MA Nurul Jadid di Probolinggo dan kini kuliah di Universitas Trunojoyo Madura.
 
-```{tableofcontents}
-```

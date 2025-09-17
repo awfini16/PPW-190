@@ -1,0 +1,1101 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Crawling Berita &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'crawlingh_berita';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My sample book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Profil
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Web Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawling_PTA.html">Crawling PTA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PPWCrawlingLink.html">Crawling Link</a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcrawlingh_berita.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/crawlingh_berita.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crawling Berita</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crawling-berita">
+<h1>Crawling Berita<a class="headerlink" href="#crawling-berita" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>beautifulsoup4<span class="w"> </span>requests
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: beautifulsoup4 in /home/codespace/.local/lib/python3.12/site-packages (4.13.4)
+Requirement already satisfied: requests in /home/codespace/.local/lib/python3.12/site-packages (2.32.4)
+Requirement already satisfied: soupsieve&gt;1.2 in /home/codespace/.local/lib/python3.12/site-packages (from beautifulsoup4) (2.7)
+Requirement already satisfied: typing-extensions&gt;=4.0.0 in /home/codespace/.local/lib/python3.12/site-packages (from beautifulsoup4) (4.14.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /home/codespace/.local/lib/python3.12/site-packages (from requests) (3.4.2)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/codespace/.local/lib/python3.12/site-packages (from requests) (3.10)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/codespace/.local/lib/python3.12/site-packages (from requests) (2.5.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/lib/python3.12/site-packages (from requests) (2025.7.9)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">25.1.1</span> -&gt; <span class=" -Color -Color-Green">25.2</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">python3 -m pip install --upgrade pip</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">bs4</span><span class="w"> </span><span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#link dari berita yang diambil</span>
+<span class="n">url</span> <span class="o">=</span><span class="s1">&#39;https://www.liputan6.com/news&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#mengubah konten html menjadi objek</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#menampilkan judul berita</span>
+
+<span class="c1"># Temukan elemen &lt;div&gt; dengan kelas &#39;overflow margin-bottom-xs&#39;</span>
+<span class="n">judul</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;articles&#39;</span><span class="p">)</span>
+<span class="c1"># Jika elemen ditemukan, cari semua elemen &lt;span&gt; di dalamnya dan tampilkan teksnya</span>
+<span class="k">if</span> <span class="n">judul</span><span class="p">:</span>
+    <span class="c1"># Inisialisasi counter</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">judul</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span> <span class="s2">&quot;articles--iridescent-list--text-item__title-link-text&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">span</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elemen dengan kelas &#39;overflow margin-bottom-xs&#39; tidak ditemukan.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Ketua DPD RI Puji Mentan Amran: 70% Masalah Pertanian Teratasi, Program Hilirisasi Jadi So...
+2. Hadiri Upacara Peringatan HUT BNPP Ke-15, Mendagri Tegaskan Tiga Tugas Utama Penjaga Perba...
+3. Mendagri Tito Karnavian Terima Perwakilan Delegasi UEA Bahas Kolaborasi Penguatan SDM
+4. Prabowo Bentuk Tim Reformasi Kepolisian, Kapolri Siap Jalankan Semua Rekomendasi
+5. Momen Ojol Foto Bareng Anggota Polri dan TNI, Tanda Berakhirnya Demo di Depan Gedung DPR
+6. Cerita di Balik &#39;Hijrah&#39; Bima ke Malang Setelah Sempat Dilaporkan Hilang Saat Demo Rusuh d...
+7. Kementerian Transmigrasi Bentuk Satu Batalion Komcad, Diisi Para Transmigran
+8. Dishub Jakarta: Tiap Rabu ASN Wajib Naik Angkutan Umum, Dongkrak 100 Ribu Penumpang
+9. Presiden Prabowo Tak Akan Bentuk TGPF Demo Rusuh Agustus 2025
+10. Dilaporkan Hilang saat Demo Rusuh di Jakarta, Bima Ditemukan Jualan Mainan di Malang
+11. Kondisi Delpedro Marhaen Usai 2 Pekan Mendekam di Bui: Berat Badan Turun, Tak Diperbolehka...
+12. Erick Thohir Dilantik Jadi Menpora, Siapa Jabat Menteri BUMN?
+13. Motif Pembunuhan Terungkap, Keluarga Kepala Cabang Bank BUMN Ajukan Perlindungan ke LPSK
+14. Dilantik Jadi Kepala Badan Komunikasi Pemerintah, Angga Raka Tetap Jabat Wamenkomdigi
+15. Wakil Ketua Komisi X Tunggu Gebrakan Erick Thohir Sebagai Menpora
+16. Prabowo Beri Gelar Jenderal Kehormatan ke Djamari Chaniago dan Ahmad Dofiri
+17. Dilantik Jadi Menko Polkam, Segini Harta Djamari Chaniago saat Masih Aktif Jabat Kasum TNI
+18. 2 Hari Uji Coba Jalur Tol Gratis, Pramono Sebut Kemacetan di TB Simatupang Berkurang
+19. Profil Rohmat Marzuki, Anggota DPRD Jateng yang Dilantik Jadi Wamen Kehutanan
+20. Daftar Terbaru Reshuffle Kabinet Merah Putih Presiden Prabowo
+21. Profil M Qodari, Pengamat Politik yang Dilantik Jadi Kepala Kantor Staf Presiden
+22. Reshuffle Kabinet: Ini Daftar Lengkap Menteri dan Wakil Menteri yang Baru Dilantik Preside...
+23. Berhentikan Hasan Nasbi, Prabowo Angkat Angga Raka Jadi Kepala Badan Komunikasi Pemerintah
+24. Profil Erick Thohir, Menpora Baru Sekaligus Ketum PSSI yang Gencar Naturalisasi
+25. PDIP Sebut Permasalahan Kesehatan Masih Terjadi Ketimpangan antara Kota dan Daerah Terpenc...
+26. Profil Ahmad Dofiri, Jenderal Polri Pemegang Palu Etik Ferdy Sambo kini Dilantik jadi Pena...
+27. Profil Afriansyah Noor Si Pengawas Proyek yang Kini Kembali Dilantik Jadi Wamenaker
+28. Profil Djamari Chaniago, Jenderal Tulen yang Jadi Pangdam Siliwangi di Era Reformasi 1998
+29. Reshuffle Kabinet: ⁠Erick Thohir, Menpora Baru di Kabinet Merah Putih
+30. Prabowo Lantik Djamari Chaniago Jadi Menko Polkam Pengganti Budi Gunawan
+31. Bocoran Angga Raka Jelang Reshuffle Kabinet: Diminta Presiden Perkuat Bidang Komunikasi
+32. Dikabarkan jadi Wamenaker, Afriansyah Noor: Doakan yang Terbaik Biar Bisa Bantu Presiden
+33. Jelang Pelantikan Sebagai Menpora, Erick Thohir: Seskab Telepon Diminta Menghadap Presiden
+34. Reshuffle Kabinet, Diisukan Jadi Wamen Koperasi Politisi PKB Farida Farichah Sudah Menghad...
+35. Sugiat DPR Ingatkan Agar Tak Ada Poin-Poin yang Rumit dalam RUU LPSK
+36. Sambut Usia ke-130 BRI Gelar Creator Fest 2025 jadi Ajang Unjuk Kreativitas Masyarakat
+37. Mendagri Pastikan Presiden Lantik Menko Polkam Definitif Hari Ini
+38. Jelang Reshuffle Erick Thohir Dikabarkan jadi Menpora, Dito Ariotedjo Update Status di IG
+39. Ramai Seruan Tolak Sirene dan Strobo Ilegal, Pramono: Saya Malah Menikmati Tidak Dikawal
+40. Demo Ojol di Jakarta Hari Ini, Pramono: Kami Berjaga Agar Kejadian Kemarin Tak Terulang
+41. Polri Maksimalkan Pencarian 3 Orang Diduga Hilang saat Demo Ricuh, Gandeng KontraS hingga ...
+42. Dedi Mulyadi Puji Mahasiswa Kritis, Tapi Ingat Jangan Suka &#39;Tilap&#39; Duit Orang Tua
+43. Gelar Aksi Damai, Aliansi Perempuan Indonesia Minta Delpedro Cs Dibebaskan
+44. 20 Hari Operasi Antik Siginjai, Polda Jambi Tangkap 247 Tersangka Kasus Narkoba
+45. Ahmad Dofiri Tiba di Istana Kepresidenan di Tengah Isu Reshuffle Kabinet
+46. Polisi Masih Buru Provokator Lain Aksi Penjarahan Rumah Uya Kuya, Libatkan Tim Siber
+47. Begini Kondisi Terkini Dua Kucing Uya Kuya yang Diambil Penjarah Rumahnya
+48. Cerita dan Nasib Karyawan SPBU Shell di Tengah Kekosongan Bahan Bakar
+49. Pelican Crossing Stasiun Cikini, Warga: Gak Perlu Lompat Pagar dan Jalan Jauh
+50. Mentrans Iftitah Puji Talenta Siswa SMA Pradipta Dirgantara, Harap Jadi Penggerak Ekonomi ...
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#mengektrak dan mencetak link halaman berita</span>
+<span class="n">link_counter</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Daftar Link:&quot;</span><span class="p">)</span>
+<span class="n">seen_links</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c1"># Set untuk melacak link yang sudah dicetak</span>
+<span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">judul</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">&quot;ui--a articles--iridescent-list--text-item__title-link&quot;</span><span class="p">):</span>
+  <span class="n">href</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">href</span> <span class="ow">and</span> <span class="n">href</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen_links</span><span class="p">:</span>  <span class="c1"># Periksa apakah href ada dan belum dicetak</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">link_counter</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">href</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">seen_links</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">href</span><span class="p">)</span>  <span class="c1"># Tambahkan href ke set</span>
+    <span class="n">link_counter</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Daftar Link:
+1. https://www.liputan6.com/news/read/6161997/ketua-dpd-ri-puji-mentan-amran-70-masalah-pertanian-teratasi-program-hilirisasi-jadi-sorotan
+2. https://www.liputan6.com/news/read/6162028/hadiri-upacara-peringatan-hut-bnpp-ke-15-mendagri-tegaskan-tiga-tugas-utama-penjaga-perbatasan
+3. https://www.liputan6.com/news/read/6162018/mendagri-tito-karnavian-terima-perwakilan-delegasi-uea-bahas-kolaborasi-penguatan-sdm
+4. https://www.liputan6.com/news/read/6161991/prabowo-bentuk-tim-reformasi-kepolisian-kapolri-siap-jalankan-semua-rekomendasi
+5. https://www.liputan6.com/news/read/6162012/momen-ojol-foto-bareng-anggota-polri-dan-tni-tanda-berakhirnya-demo-di-depan-gedung-dpr
+6. https://www.liputan6.com/news/read/6161995/cerita-di-balik-hijrah-bima-ke-malang-setelah-sempat-dilaporkan-hilang-saat-demo-rusuh-di-jakarta
+7. https://www.liputan6.com/news/read/6161987/kementerian-transmigrasi-bentuk-satu-batalion-komcad-diisi-para-transmigran
+8. https://www.liputan6.com/news/read/6161971/dishub-jakarta-tiap-rabu-asn-wajib-naik-angkutan-umum-dongkrak-100-ribu-penumpang
+9. https://www.liputan6.com/news/read/6161968/presiden-prabowo-tak-akan-bentuk-tgpf-demo-rusuh-agustus-2025
+10. https://www.liputan6.com/news/read/6161956/dilaporkan-hilang-saat-demo-rusuh-di-jakarta-bima-ditemukan-jualan-mainan-di-malang
+11. https://www.liputan6.com/news/read/6161957/kondisi-delpedro-marhaen-usai-2-pekan-mendekam-di-bui-berat-badan-turun-tak-diperbolehkan-menulis
+12. https://www.liputan6.com/news/read/6161921/erick-thohir-dilantik-jadi-menpora-siapa-jabat-menteri-bumn
+13. https://www.liputan6.com/news/read/6161930/motif-pembunuhan-terungkap-keluarga-kepala-cabang-bank-bumn-ajukan-perlindungan-ke-lpsk
+14. https://www.liputan6.com/news/read/6161895/dilantik-jadi-kepala-badan-komunikasi-pemerintah-angga-raka-tetap-jabat-wamenkomdigi
+15. https://www.liputan6.com/news/read/6161977/wakil-ketua-komisi-x-tunggu-gebrakan-erick-thohir-sebagai-menpora
+16. https://www.liputan6.com/news/read/6161879/prabowo-beri-gelar-jenderal-kehormatan-ke-djamari-chaniago-dan-ahmad-dofiri
+17. https://www.liputan6.com/news/read/6161832/dilantik-jadi-menko-polkam-segini-harta-djamari-chaniago-saat-masih-aktif-jabat-kasum-tni
+18. https://www.liputan6.com/news/read/6161843/2-hari-uji-coba-jalur-tol-gratis-pramono-sebut-kemacetan-di-tb-simatupang-berkurang
+19. https://www.liputan6.com/news/read/6161703/profil-rohmat-marzuki-anggota-dprd-jateng-yang-dilantik-jadi-wamen-kehutanan
+20. https://www.liputan6.com/news/read/6153861/daftar-terbaru-reshuffle-kabinet-merah-putih-presiden-prabowo
+21. https://www.liputan6.com/news/read/6161790/profil-m-qodari-pengamat-politik-yang-dilantik-jadi-kepala-kantor-staf-presiden
+22. https://www.liputan6.com/news/read/6161799/reshuffle-kabinet-ini-daftar-lengkap-menteri-dan-wakil-menteri-yang-baru-dilantik-presiden-prabowo
+23. https://www.liputan6.com/news/read/6161786/berhentikan-hasan-nasbi-prabowo-angkat-angga-raka-jadi-kepala-badan-komunikasi-pemerintah
+24. https://www.liputan6.com/news/read/6161754/profil-erick-thohir-menpora-baru-sekaligus-ketum-pssi-yang-gencar-naturalisasi
+25. https://www.liputan6.com/news/read/6161947/pdip-sebut-permasalahan-kesehatan-masih-terjadi-ketimpangan-antara-kota-dan-daerah-terpencil
+26. https://www.liputan6.com/news/read/6161672/profil-ahmad-dofiri-jenderal-polri-pemegang-palu-etik-ferdy-sambo-kini-dilantik-jadi-penasihat-khusus-presiden
+27. https://www.liputan6.com/news/read/6161706/profil-afriansyah-noor-si-pengawas-proyek-yang-kini-kembali-dilantik-jadi-wamenaker
+28. https://www.liputan6.com/news/read/6161752/profil-djamari-chaniago-jenderal-tulen-yang-jadi-pangdam-siliwangi-di-era-reformasi-1998
+29. https://www.liputan6.com/news/read/6161750/reshuffle-kabinet-erick-thohir-menpora-baru-di-kabinet-merah-putih
+30. https://www.liputan6.com/news/read/6161751/prabowo-lantik-djamari-chaniago-jadi-menko-polkam-pengganti-budi-gunawan
+31. https://www.liputan6.com/news/read/6161730/bocoran-angga-raka-jelang-reshuffle-kabinet-diminta-presiden-perkuat-bidang-komunikasi
+32. https://www.liputan6.com/news/read/6161723/dikabarkan-jadi-wamenaker-afriansyah-noor-doakan-yang-terbaik-biar-bisa-bantu-presiden
+33. https://www.liputan6.com/news/read/6161679/jelang-pelantikan-sebagai-menpora-erick-thohir-seskab-telepon-diminta-menghadap-presiden
+34. https://www.liputan6.com/news/read/6161673/reshuffle-kabinet-diisukan-jadi-wamen-koperasi-politisi-pkb-farida-farichah-sudah-menghadap-presiden-prabowo
+35. https://www.liputan6.com/news/read/6162039/sugiat-dpr-ingatkan-agar-tak-ada-poin-poin-yang-rumit-dalam-ruu-lpsk
+36. https://www.liputan6.com/news/read/6161639/sambut-usia-ke-130-bri-gelar-creator-fest-2025-jadi-ajang-unjuk-kreativitas-masyarakat
+37. https://www.liputan6.com/news/read/6161624/mendagri-pastikan-presiden-lantik-menko-polkam-definitif-hari-ini
+38. https://www.liputan6.com/news/read/6161604/jelang-reshuffle-erick-thohir-dikabarkan-jadi-menpora-dito-ariotedjo-update-status-di-ig
+39. https://www.liputan6.com/news/read/6161606/ramai-seruan-tolak-sirene-dan-strobo-ilegal-pramono-saya-malah-menikmati-tidak-dikawal
+40. https://www.liputan6.com/news/read/6161652/demo-ojol-di-jakarta-hari-ini-pramono-kami-berjaga-agar-kejadian-kemarin-tak-terulang
+41. https://www.liputan6.com/news/read/6161568/polri-maksimalkan-pencarian-3-orang-diduga-hilang-saat-demo-ricuh-gandeng-kontras-hingga-komnas-ham
+42. https://www.liputan6.com/news/read/6161548/dedi-mulyadi-puji-mahasiswa-kritis-tapi-ingat-jangan-suka-tilap-duit-orang-tua
+43. https://www.liputan6.com/news/read/6161531/gelar-aksi-damai-aliansi-perempuan-indonesia-minta-delpedro-cs-dibebaskan
+44. https://www.liputan6.com/news/read/6161526/20-hari-operasi-antik-siginjai-polda-jambi-tangkap-247-tersangka-kasus-narkoba
+45. https://www.liputan6.com/news/read/6161537/ahmad-dofiri-tiba-di-istana-kepresidenan-di-tengah-isu-reshuffle-kabinet
+46. https://www.liputan6.com/news/read/6161527/polisi-masih-buru-provokator-lain-aksi-penjarahan-rumah-uya-kuya-libatkan-tim-siber
+47. https://www.liputan6.com/news/read/6161517/begini-kondisi-terkini-dua-kucing-uya-kuya-yang-diambil-penjarah-rumahnya
+48. https://www.liputan6.com/news/read/6161515/cerita-dan-nasib-karyawan-spbu-shell-di-tengah-kekosongan-bahan-bakar
+49. https://www.liputan6.com/news/read/6161446/pelican-crossing-stasiun-cikini-warga-gak-perlu-lompat-pagar-dan-jalan-jauh
+50. https://www.liputan6.com/news/read/6161528/mentrans-iftitah-puji-talenta-siswa-sma-pradipta-dirgantara-harap-jadi-penggerak-ekonomi-baru
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#mengumpulkan dan menyimpan data artikel dari berita dalam format dataframe</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>  <span class="c1"># Jika Anda menggunakan Jupyter Notebook</span>
+
+<span class="c1"># List untuk menyimpan data artikel</span>
+<span class="n">data_artikel</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Mengambil semua artikel dari halaman</span>
+<span class="n">articles</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span>  <span class="c1"># Ubah selector menjadi &#39;article&#39; jika setiap artikel dibungkus dalam elemen &lt;article&gt;</span>
+
+<span class="c1"># Set untuk menyimpan href yang sudah dilihat agar tidak terjadi duplikasi</span>
+<span class="n">seen_links</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="c1"># Iterasi melalui setiap artikel</span>
+<span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="c1"># Ambil link artikel</span>
+    <span class="n">link</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;ui--a articles--iridescent-list--text-item__title-link&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">link</span><span class="p">:</span>
+        <span class="n">href</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">href</span> <span class="ow">and</span> <span class="n">href</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen_links</span><span class="p">:</span>
+            <span class="c1"># Ambil tanggal publikasi</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;articles--iridescent-list--text-item__time&#39;</span><span class="p">)</span>
+            <span class="n">date_text</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">date</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span>
+
+            <span class="c1"># Ambil kategori artikel</span>
+            <span class="n">category</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;articles--iridescent-list--text-item__category&#39;</span><span class="p">)</span>
+            <span class="n">category_text</span> <span class="o">=</span> <span class="n">category</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">category</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span>
+
+            <span class="c1"># Ambil ringkasan artikel</span>
+            <span class="n">summary_div</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;articles--iridescent-list--text-item__summary articles--iridescent-list--text-item__summary-seo&#39;</span><span class="p">)</span>
+            <span class="n">summary_text</span> <span class="o">=</span> <span class="n">summary_div</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">summary_div</span> <span class="k">else</span> <span class="s1">&#39;N/A&#39;</span>
+
+            <span class="c1"># Menyimpan data ke dalam list sebagai satu baris per artikel</span>
+            <span class="n">data_artikel</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">title</span><span class="p">,</span> <span class="n">date_text</span><span class="p">,</span> <span class="n">summary_text</span><span class="p">,</span> <span class="n">category_text</span><span class="p">])</span>
+
+            <span class="c1"># Tambahkan href ke set untuk menghindari duplikasi</span>
+            <span class="n">seen_links</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">href</span><span class="p">)</span>
+
+<span class="c1"># Membuat DataFrame dari list data_artikel dengan kolom yang diinginkan</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_artikel</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span> <span class="s1">&#39;Tanggal&#39;</span><span class="p">,</span> <span class="s1">&#39;Ringkasan&#39;</span><span class="p">,</span> <span class="s1">&#39;Kategori&#39;</span><span class="p">])</span>
+
+<span class="c1"># Menampilkan DataFrame menggunakan display</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Tanggal</th>
+      <th>Ringkasan</th>
+      <th>Kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ketua DPD RI Puji Mentan Amran: 70% Masalah Pe...</td>
+      <td>17 Sep 2025 20:15</td>
+      <td>Sultan menilai kehadiran Amran sangat strategi...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Hadiri Upacara Peringatan HUT BNPP Ke-15, Mend...</td>
+      <td>17 Sep 2025 20:10</td>
+      <td>Menteri Dalam Negeri (Mendagri) Tito Karnavian...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mendagri Tito Karnavian Terima Perwakilan Dele...</td>
+      <td>17 Sep 2025 19:42</td>
+      <td>Momen pertemuan Mendagri Tito Karnavian dengan...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Prabowo Bentuk Tim Reformasi Kepolisian, Kapol...</td>
+      <td>17 Sep 2025 19:28</td>
+      <td>Listyo meyakini, kepolisian selama ini selalu ...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Momen Ojol Foto Bareng Anggota Polri dan TNI, ...</td>
+      <td>17 Sep 2025 19:27</td>
+      <td>Aksi demo pengemudi ojek online (ojol) yang te...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Cerita di Balik 'Hijrah' Bima ke Malang Setela...</td>
+      <td>17 Sep 2025 19:00</td>
+      <td>Bima ditangkap di depan Klenteng Eng An Kiong,...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Kementerian Transmigrasi Bentuk Satu Batalion ...</td>
+      <td>17 Sep 2025 18:55</td>
+      <td>Kementerian Transmigrasi berencana akan menyia...</td>
+      <td>Megapolitan</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dishub Jakarta: Tiap Rabu ASN Wajib Naik Angku...</td>
+      <td>17 Sep 2025 18:30</td>
+      <td>Program Rabu Wajib Transportasi Umum bagi apar...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Presiden Prabowo Tak Akan Bentuk TGPF Demo Rus...</td>
+      <td>17 Sep 2025 18:25</td>
+      <td>Presiden Prabowo memutuskan tidak membuat TGPF...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Dilaporkan Hilang saat Demo Rusuh di Jakarta, ...</td>
+      <td>17 Sep 2025 18:09</td>
+      <td>Bima Permana Putra (29), salah seorang yang di...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Kondisi Delpedro Marhaen Usai 2 Pekan Mendekam...</td>
+      <td>17 Sep 2025 18:07</td>
+      <td>Delpedro menitipkan ucapan terima kasih kepada...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Erick Thohir Dilantik Jadi Menpora, Siapa Jaba...</td>
+      <td>17 Sep 2025 18:02</td>
+      <td>Prasetyo mengatakan,  belum ada keputusan siap...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Motif Pembunuhan Terungkap, Keluarga Kepala Ca...</td>
+      <td>17 Sep 2025 17:41</td>
+      <td>Dalam kasus ini, sudah 15 orang ditetapkan seb...</td>
+      <td>Megapolitan</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Dilantik Jadi Kepala Badan Komunikasi Pemerint...</td>
+      <td>17 Sep 2025 17:17</td>
+      <td>Badan Komunikasi Pemerintah merupakan lembaga ...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Wakil Ketua Komisi X Tunggu Gebrakan Erick Tho...</td>
+      <td>17 Sep 2025 16:56</td>
+      <td>Paling penting, Erick Thohir bisa membuat inov...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Prabowo Beri Gelar Jenderal Kehormatan ke Djam...</td>
+      <td>17 Sep 2025 16:46</td>
+      <td>Presiden Prabowo Subianto memberikan gelar jen...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Dilantik Jadi Menko Polkam, Segini Harta Djama...</td>
+      <td>17 Sep 2025 16:07</td>
+      <td>Djamari menggantikan Budi Gunawan sebagai Menk...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2 Hari Uji Coba Jalur Tol Gratis, Pramono Sebu...</td>
+      <td>17 Sep 2025 16:00</td>
+      <td>Gubernur DKI Jakarta Pramono Anung, menyebut u...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Profil Rohmat Marzuki, Anggota DPRD Jateng yan...</td>
+      <td>17 Sep 2025 15:51</td>
+      <td>Rohmat bukan sosok baru di kancah politik daer...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Daftar Terbaru Reshuffle Kabinet Merah Putih P...</td>
+      <td>17 Sep 2025 15:49</td>
+      <td>Presiden Prabowo Subianto secara resmi melakuk...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Profil M Qodari, Pengamat Politik yang Dilanti...</td>
+      <td>17 Sep 2025 15:43</td>
+      <td>Karier Qodari dimulai dari ranah akademis, ia ...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Reshuffle Kabinet: Ini Daftar Lengkap Menteri ...</td>
+      <td>17 Sep 2025 15:42</td>
+      <td>Presiden Prabowo Subianto kembali melakukan re...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Berhentikan Hasan Nasbi, Prabowo Angkat Angga ...</td>
+      <td>17 Sep 2025 15:40</td>
+      <td>Pelantikan digelar di Istana Negara Jakarta, R...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Profil Erick Thohir, Menpora Baru Sekaligus Ke...</td>
+      <td>17 Sep 2025 15:35</td>
+      <td>Tercatat, ada lebih dari 20 pemain naturalisas...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>PDIP Sebut Permasalahan Kesehatan Masih Terjad...</td>
+      <td>17 Sep 2025 15:26</td>
+      <td>PDIP mendorong agar pemerintah memberi perhati...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Profil Ahmad Dofiri, Jenderal Polri Pemegang P...</td>
+      <td>17 Sep 2025 15:22</td>
+      <td>Ahmad Dofiri merupakan perwira tinggi Polri ya...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Profil Afriansyah Noor Si Pengawas Proyek yang...</td>
+      <td>17 Sep 2025 15:22</td>
+      <td>Presiden Prabowo Subianto resmi melantik Afria...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Profil Djamari Chaniago, Jenderal Tulen yang J...</td>
+      <td>17 Sep 2025 15:19</td>
+      <td>Presiden Prabowo Subianto resmi melantik Letje...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Reshuffle Kabinet: ⁠Erick Thohir, Menpora Baru...</td>
+      <td>17 Sep 2025 15:18</td>
+      <td>Di tengah Reshuffle Kabinet Merah Putih yang d...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Prabowo Lantik Djamari Chaniago Jadi Menko Pol...</td>
+      <td>17 Sep 2025 15:16</td>
+      <td>Djamari Chaniago adalah lulusan Akademi Angkat...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Bocoran Angga Raka Jelang Reshuffle Kabinet: D...</td>
+      <td>17 Sep 2025 15:02</td>
+      <td>Presiden Prabowo Subianto melantik sejumlah na...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Dikabarkan jadi Wamenaker, Afriansyah Noor: Do...</td>
+      <td>17 Sep 2025 14:39</td>
+      <td>Wakil Sekretaris Jenderal (Wasekjen) Partai De...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Jelang Pelantikan Sebagai Menpora, Erick Thohi...</td>
+      <td>17 Sep 2025 14:36</td>
+      <td>Erick tiba di Istana, Rabu (17/9) siang.</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Reshuffle Kabinet, Diisukan Jadi Wamen Koperas...</td>
+      <td>17 Sep 2025 14:31</td>
+      <td>Farida mengaku telah dipanggil menghadap Presi...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Sugiat DPR Ingatkan Agar Tak Ada Poin-Poin yan...</td>
+      <td>17 Sep 2025 14:02</td>
+      <td>Legislator dari Fraksi Partai Gerindra ini mem...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Sambut Usia ke-130 BRI Gelar Creator Fest 2025...</td>
+      <td>17 Sep 2025 14:01</td>
+      <td>Ajang ini hadir sebagai wadah partisipatif mas...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Mendagri Pastikan Presiden Lantik Menko Polkam...</td>
+      <td>17 Sep 2025 13:57</td>
+      <td>Presiden Prabowo Subianto dikabarkan akan mela...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Jelang Reshuffle Erick Thohir Dikabarkan jadi ...</td>
+      <td>17 Sep 2025 13:50</td>
+      <td>Erick Thohir digadang menggantikan Dito Ariote...</td>
+      <td>Politik</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Ramai Seruan Tolak Sirene dan Strobo Ilegal, P...</td>
+      <td>17 Sep 2025 13:45</td>
+      <td>Pramono tidak terbiasa menggunakan sirene seca...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Demo Ojol di Jakarta Hari Ini, Pramono: Kami B...</td>
+      <td>17 Sep 2025 13:29</td>
+      <td>Gubernur DKI Jakarta Pramono Anung menyebut, p...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Polri Maksimalkan Pencarian 3 Orang Diduga Hil...</td>
+      <td>17 Sep 2025 13:08</td>
+      <td>Polri terus memaksimalkan upaya pencarian tiga...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Dedi Mulyadi Puji Mahasiswa Kritis, Tapi Ingat...</td>
+      <td>17 Sep 2025 13:04</td>
+      <td>Gubernur Jawa Barat Dedi Mulyadi mengungkap di...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Gelar Aksi Damai, Aliansi Perempuan Indonesia ...</td>
+      <td>17 Sep 2025 13:02</td>
+      <td>Aksi tabur bunga menjadi simbol. Bunga-bunga b...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>20 Hari Operasi Antik Siginjai, Polda Jambi Ta...</td>
+      <td>17 Sep 2025 13:00</td>
+      <td>Polda Jambi mengungkap sebanyak 116 kasus pere...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Ahmad Dofiri Tiba di Istana Kepresidenan di Te...</td>
+      <td>17 Sep 2025 12:48</td>
+      <td>Dofiri datang ditengah isu Presiden Prabowo Su...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Polisi Masih Buru Provokator Lain Aksi Penjara...</td>
+      <td>17 Sep 2025 12:41</td>
+      <td>Jumlah tersangka dalam kasus penjarahan rumah ...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Begini Kondisi Terkini Dua Kucing Uya Kuya yan...</td>
+      <td>17 Sep 2025 12:35</td>
+      <td>Polres Metro Jakarta Timur akan mengembalikan ...</td>
+      <td>Peristiwa</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Cerita dan Nasib Karyawan SPBU Shell di Tengah...</td>
+      <td>17 Sep 2025 12:30</td>
+      <td>Kekhawatiran menyelimuti karyawan SPBU Shell d...</td>
+      <td>Megapolitan</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Pelican Crossing Stasiun Cikini, Warga: Gak Pe...</td>
+      <td>17 Sep 2025 12:23</td>
+      <td>Pelican crossing Stasiun Cikini hadirkan akses...</td>
+      <td>News</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Mentrans Iftitah Puji Talenta Siswa SMA Pradip...</td>
+      <td>17 Sep 2025 12:21</td>
+      <td>Menteri  Iftitah mendorong siswa untuk mengemb...</td>
+      <td>Peristiwa</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
