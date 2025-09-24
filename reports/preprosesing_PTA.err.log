@@ -96,21 +96,9 @@ files.download(output_file)
 ------------------
 
 ----- stdout -----
-Collecting Sastrawi
+Requirement already satisfied: Sastrawi in /usr/local/python/3.12.1/lib/python3.12/site-packages (1.0.1)
+Requirement already satisfied: tqdm in /usr/local/python/3.12.1/lib/python3.12/site-packages (4.67.1)
 ----- stdout -----
-  Downloading Sastrawi-1.0.1-py2.py3-none-any.whl.metadata (909 bytes)
------ stdout -----
-Collecting tqdm
-  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
------ stdout -----
-Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
-Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
------ stdout -----
-Installing collected packages: Sastrawi, tqdm
-[?25l
------ stdout -----
-[2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2/2[0m [tqdm]
-[?25h[1A[2KSuccessfully installed Sastrawi-1.0.1 tqdm-4.67.1
 
 [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m25.1.1[0m[39;49m -> [0m[32;49m25.2[0m
 [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3 -m pip install --upgrade pip[0m
@@ -118,12 +106,12 @@ Installing collected packages: Sastrawi, tqdm
 
 [31m---------------------------------------------------------------------------[39m
 [31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 6[39m
-[32m      4[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m      5[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mstring[39;00m
-[32m----> [39m[32m6[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnltk[39;00m
-[32m      7[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mrequests[39;00m
-[32m      8[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mnltk[39;00m[34;01m.[39;00m[34;01mtokenize[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m word_tokenize
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 12[39m
+[32m     10[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mSastrawi[39;00m[34;01m.[39;00m[34;01mStemmer[39;00m[34;01m.[39;00m[34;01mStemmerFactory[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m StemmerFactory
+[32m     11[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mSastrawi[39;00m[34;01m.[39;00m[34;01mStopWordRemover[39;00m[34;01m.[39;00m[34;01mStopWordRemoverFactory[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m StopWordRemoverFactory
+[32m---> [39m[32m12[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mgoogle[39;00m[34;01m.[39;00m[34;01mcolab[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m files
+[32m     13[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mfunctools[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m lru_cache
+[32m     14[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mtqdm[39;00m[34;01m.[39;00m[34;01mnotebook[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m tqdm
 
-[31mModuleNotFoundError[39m: No module named 'nltk'
+[31mModuleNotFoundError[39m: No module named 'google'
 
