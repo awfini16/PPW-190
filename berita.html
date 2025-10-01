@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TF-IDF berita &#8212; Awfini Hilma</title>
+    <title>TF-IDF &amp; Word Embedding berita &#8212; Awfini Hilma</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -189,7 +189,7 @@
 <li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing Berita &amp; PTA</a></li>
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">TF-IDF berita</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TF-IDF &amp; Word Embedding berita</a></li>
 
 
 </ul>
@@ -377,7 +377,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>TF-IDF berita</h1>
+    <h1>TF-IDF & Word Embedding berita</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,7 +387,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TF-IDF berita</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TF-IDF &amp; Word Embedding berita</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">word embedding</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-tf-idf-dan-word-embedding">perbandingan TF-IDF dan Word embedding</a></li>
 </ul>
@@ -402,8 +402,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tf-idf-berita">
-<h1>TF-IDF berita<a class="headerlink" href="#tf-idf-berita" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tf-idf-word-embedding-berita">
+<h1>TF-IDF &amp; Word Embedding berita<a class="headerlink" href="#tf-idf-word-embedding-berita" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -672,18 +672,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">gensim.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Word2Vec</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Training model Word2Vec (CBOW -&gt; sg=0)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">model_cbow</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">sentences</span><span class="o">=</span><span class="n">tokenized_corpus</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">vector_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>  <span class="c1"># ukuran embedding</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>     <span class="mi">10</span>     <span class="n">workers</span><span class="o">=</span><span class="mi">4</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;gensim&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model CBOW berhasil dilatih dan disimpan!
 </pre></div>
 </div>
 </div>
@@ -986,7 +975,7 @@ weighted avg       0.51      0.71      0.60        42
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TF-IDF berita</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TF-IDF &amp; Word Embedding berita</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#word-embedding">word embedding</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan-tf-idf-dan-word-embedding">perbandingan TF-IDF dan Word embedding</a></li>
 </ul>
