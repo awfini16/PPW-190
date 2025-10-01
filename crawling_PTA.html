@@ -190,7 +190,7 @@
 <li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing Berita &amp; PTA</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="berita.html">TF-IDF berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="berita.html">TF-IDF &amp; Word Embedding berita</a></li>
 
 
 </ul>
@@ -394,7 +394,7 @@ document.write(`
 <h1>Crawling PTA<a class="headerlink" href="#crawling-pta" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">bs4</span><span class="w"> </span><span class="kn">import</span> <span class="n">BeautifulSoup</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
@@ -469,174 +469,837 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/workspaces/PPW-190/.venv/lib/python3.12/site-packages/soupsieve/css_parser.py:876: FutureWarning: The pseudo class &#39;:contains&#39; is deprecated, &#39;:-soup-contains&#39; should be used moving forward.
-  warnings.warn(  # noqa: B028
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 1
+Selesai ambil data Prodi 9 (ID 9), Halaman 2
+Selesai ambil data Prodi 9 (ID 9), Halaman 3
+Selesai ambil data Prodi 9 (ID 9), Halaman 4
+Selesai ambil data Prodi 9 (ID 9), Halaman 5
+Selesai ambil data Prodi 9 (ID 9), Halaman 6
+Selesai ambil data Prodi 9 (ID 9), Halaman 7
+Selesai ambil data Prodi 9 (ID 9), Halaman 8
+Selesai ambil data Prodi 9 (ID 9), Halaman 9
+Selesai ambil data Prodi 9 (ID 9), Halaman 10
+Selesai ambil data Prodi 9 (ID 9), Halaman 11
+Selesai ambil data Prodi 9 (ID 9), Halaman 12
+Selesai ambil data Prodi 9 (ID 9), Halaman 13
+Selesai ambil data Prodi 9 (ID 9), Halaman 14
+Selesai ambil data Prodi 9 (ID 9), Halaman 15
+Selesai ambil data Prodi 9 (ID 9), Halaman 16
+Selesai ambil data Prodi 9 (ID 9), Halaman 17
+Selesai ambil data Prodi 9 (ID 9), Halaman 18
+Selesai ambil data Prodi 9 (ID 9), Halaman 19
+Selesai ambil data Prodi 9 (ID 9), Halaman 20
+Selesai ambil data Prodi 9 (ID 9), Halaman 21
+Selesai ambil data Prodi 9 (ID 9), Halaman 22
+Selesai ambil data Prodi 9 (ID 9), Halaman 23
+Selesai ambil data Prodi 9 (ID 9), Halaman 24
+Selesai ambil data Prodi 9 (ID 9), Halaman 25
+Selesai ambil data Prodi 9 (ID 9), Halaman 26
+Selesai ambil data Prodi 9 (ID 9), Halaman 27
+Selesai ambil data Prodi 9 (ID 9), Halaman 28
+Selesai ambil data Prodi 9 (ID 9), Halaman 29
+Selesai ambil data Prodi 9 (ID 9), Halaman 30
+Selesai ambil data Prodi 9 (ID 9), Halaman 31
+Selesai ambil data Prodi 9 (ID 9), Halaman 32
+Selesai ambil data Prodi 9 (ID 9), Halaman 33
+Selesai ambil data Prodi 9 (ID 9), Halaman 34
+Selesai ambil data Prodi 9 (ID 9), Halaman 35
+Selesai ambil data Prodi 9 (ID 9), Halaman 36
+Selesai ambil data Prodi 9 (ID 9), Halaman 37
+Selesai ambil data Prodi 9 (ID 9), Halaman 38
+Selesai ambil data Prodi 9 (ID 9), Halaman 39
+Selesai ambil data Prodi 9 (ID 9), Halaman 40
+Selesai ambil data Prodi 9 (ID 9), Halaman 41
+Selesai ambil data Prodi 9 (ID 9), Halaman 42
+Selesai ambil data Prodi 9 (ID 9), Halaman 43
+Selesai ambil data Prodi 9 (ID 9), Halaman 44
+Selesai ambil data Prodi 9 (ID 9), Halaman 45
+Selesai ambil data Prodi 9 (ID 9), Halaman 46
+Selesai ambil data Prodi 9 (ID 9), Halaman 47
+Selesai ambil data Prodi 9 (ID 9), Halaman 48
+Selesai ambil data Prodi 9 (ID 9), Halaman 49
+Selesai ambil data Prodi 9 (ID 9), Halaman 50
+Selesai ambil data Prodi 9 (ID 9), Halaman 51
+Selesai ambil data Prodi 9 (ID 9), Halaman 52
+Selesai ambil data Prodi 9 (ID 9), Halaman 53
+Selesai ambil data Prodi 9 (ID 9), Halaman 54
+Selesai ambil data Prodi 9 (ID 9), Halaman 55
+Selesai ambil data Prodi 9 (ID 9), Halaman 56
+Selesai ambil data Prodi 9 (ID 9), Halaman 57
+Selesai ambil data Prodi 9 (ID 9), Halaman 58
+Selesai ambil data Prodi 9 (ID 9), Halaman 59
+Selesai ambil data Prodi 9 (ID 9), Halaman 60
+Selesai ambil data Prodi 9 (ID 9), Halaman 61
+Selesai ambil data Prodi 9 (ID 9), Halaman 62
+Selesai ambil data Prodi 9 (ID 9), Halaman 63
+Selesai ambil data Prodi 9 (ID 9), Halaman 64
+Selesai ambil data Prodi 9 (ID 9), Halaman 65
+Selesai ambil data Prodi 9 (ID 9), Halaman 66
+Selesai ambil data Prodi 9 (ID 9), Halaman 67
+Selesai ambil data Prodi 9 (ID 9), Halaman 68
+Selesai ambil data Prodi 9 (ID 9), Halaman 69
+Selesai ambil data Prodi 9 (ID 9), Halaman 70
+Selesai ambil data Prodi 9 (ID 9), Halaman 71
+Selesai ambil data Prodi 9 (ID 9), Halaman 72
+Selesai ambil data Prodi 9 (ID 9), Halaman 73
+Selesai ambil data Prodi 9 (ID 9), Halaman 74
+Selesai ambil data Prodi 9 (ID 9), Halaman 75
+Selesai ambil data Prodi 9 (ID 9), Halaman 76
+Selesai ambil data Prodi 9 (ID 9), Halaman 77
+Selesai ambil data Prodi 9 (ID 9), Halaman 78
+Selesai ambil data Prodi 9 (ID 9), Halaman 79
+Selesai ambil data Prodi 9 (ID 9), Halaman 80
+Selesai ambil data Prodi 9 (ID 9), Halaman 81
+Selesai ambil data Prodi 9 (ID 9), Halaman 82
+Selesai ambil data Prodi 9 (ID 9), Halaman 83
+Selesai ambil data Prodi 9 (ID 9), Halaman 84
+Selesai ambil data Prodi 9 (ID 9), Halaman 85
+Selesai ambil data Prodi 9 (ID 9), Halaman 86
+Selesai ambil data Prodi 9 (ID 9), Halaman 87
+Selesai ambil data Prodi 9 (ID 9), Halaman 88
+Selesai ambil data Prodi 9 (ID 9), Halaman 89
+Selesai ambil data Prodi 9 (ID 9), Halaman 90
+Selesai ambil data Prodi 9 (ID 9), Halaman 91
+Selesai ambil data Prodi 9 (ID 9), Halaman 92
+Selesai ambil data Prodi 9 (ID 9), Halaman 93
+Selesai ambil data Prodi 9 (ID 9), Halaman 94
+Selesai ambil data Prodi 9 (ID 9), Halaman 95
+Selesai ambil data Prodi 9 (ID 9), Halaman 96
+Selesai ambil data Prodi 9 (ID 9), Halaman 97
+Selesai ambil data Prodi 9 (ID 9), Halaman 98
+Selesai ambil data Prodi 9 (ID 9), Halaman 99
+Selesai ambil data Prodi 9 (ID 9), Halaman 100
+Selesai ambil data Prodi 9 (ID 9), Halaman 101
+Selesai ambil data Prodi 9 (ID 9), Halaman 102
+Selesai ambil data Prodi 9 (ID 9), Halaman 103
+Selesai ambil data Prodi 9 (ID 9), Halaman 104
+Selesai ambil data Prodi 9 (ID 9), Halaman 105
+Selesai ambil data Prodi 9 (ID 9), Halaman 106
+Selesai ambil data Prodi 9 (ID 9), Halaman 107
+Selesai ambil data Prodi 9 (ID 9), Halaman 108
+Selesai ambil data Prodi 9 (ID 9), Halaman 109
+Selesai ambil data Prodi 9 (ID 9), Halaman 110
+Selesai ambil data Prodi 9 (ID 9), Halaman 111
+Selesai ambil data Prodi 9 (ID 9), Halaman 112
+Selesai ambil data Prodi 9 (ID 9), Halaman 113
+Selesai ambil data Prodi 9 (ID 9), Halaman 114
+Selesai ambil data Prodi 9 (ID 9), Halaman 115
+Selesai ambil data Prodi 9 (ID 9), Halaman 116
+Selesai ambil data Prodi 9 (ID 9), Halaman 117
+Selesai ambil data Prodi 9 (ID 9), Halaman 118
+Selesai ambil data Prodi 9 (ID 9), Halaman 119
+Selesai ambil data Prodi 9 (ID 9), Halaman 120
+Selesai ambil data Prodi 9 (ID 9), Halaman 121
+Selesai ambil data Prodi 9 (ID 9), Halaman 122
+Selesai ambil data Prodi 9 (ID 9), Halaman 123
+Selesai ambil data Prodi 9 (ID 9), Halaman 124
+Selesai ambil data Prodi 9 (ID 9), Halaman 125
+Selesai ambil data Prodi 9 (ID 9), Halaman 126
+Selesai ambil data Prodi 9 (ID 9), Halaman 127
+Selesai ambil data Prodi 9 (ID 9), Halaman 128
+Selesai ambil data Prodi 9 (ID 9), Halaman 129
+Selesai ambil data Prodi 9 (ID 9), Halaman 130
+Selesai ambil data Prodi 9 (ID 9), Halaman 131
+Selesai ambil data Prodi 9 (ID 9), Halaman 132
+Selesai ambil data Prodi 9 (ID 9), Halaman 133
+Selesai ambil data Prodi 9 (ID 9), Halaman 134
+Selesai ambil data Prodi 9 (ID 9), Halaman 135
+Selesai ambil data Prodi 9 (ID 9), Halaman 136
+Selesai ambil data Prodi 9 (ID 9), Halaman 137
+Selesai ambil data Prodi 9 (ID 9), Halaman 138
+Selesai ambil data Prodi 9 (ID 9), Halaman 139
+Selesai ambil data Prodi 9 (ID 9), Halaman 140
+Selesai ambil data Prodi 9 (ID 9), Halaman 141
+Selesai ambil data Prodi 9 (ID 9), Halaman 142
+Selesai ambil data Prodi 9 (ID 9), Halaman 143
+Selesai ambil data Prodi 10 (ID 10), Halaman 1
+Selesai ambil data Prodi 10 (ID 10), Halaman 2
+Selesai ambil data Prodi 10 (ID 10), Halaman 3
+Selesai ambil data Prodi 10 (ID 10), Halaman 4
+Selesai ambil data Prodi 10 (ID 10), Halaman 5
+Selesai ambil data Prodi 10 (ID 10), Halaman 6
+Selesai ambil data Prodi 10 (ID 10), Halaman 7
+Selesai ambil data Prodi 10 (ID 10), Halaman 8
+Selesai ambil data Prodi 10 (ID 10), Halaman 9
+Selesai ambil data Prodi 10 (ID 10), Halaman 10
+Selesai ambil data Prodi 10 (ID 10), Halaman 11
+Selesai ambil data Prodi 10 (ID 10), Halaman 12
+Selesai ambil data Prodi 10 (ID 10), Halaman 13
+Selesai ambil data Prodi 10 (ID 10), Halaman 14
+Selesai ambil data Prodi 10 (ID 10), Halaman 15
+Selesai ambil data Prodi 10 (ID 10), Halaman 16
+Selesai ambil data Prodi 10 (ID 10), Halaman 17
+Selesai ambil data Prodi 10 (ID 10), Halaman 18
+Selesai ambil data Prodi 10 (ID 10), Halaman 19
+Selesai ambil data Prodi 10 (ID 10), Halaman 20
+Selesai ambil data Prodi 10 (ID 10), Halaman 21
+Selesai ambil data Prodi 10 (ID 10), Halaman 22
+Selesai ambil data Prodi 10 (ID 10), Halaman 23
+Selesai ambil data Prodi 10 (ID 10), Halaman 24
+Selesai ambil data Prodi 10 (ID 10), Halaman 25
+Selesai ambil data Prodi 10 (ID 10), Halaman 26
+Selesai ambil data Prodi 10 (ID 10), Halaman 27
+Selesai ambil data Prodi 10 (ID 10), Halaman 28
+Selesai ambil data Prodi 10 (ID 10), Halaman 29
+Selesai ambil data Prodi 10 (ID 10), Halaman 30
+Selesai ambil data Prodi 10 (ID 10), Halaman 31
+Selesai ambil data Prodi 10 (ID 10), Halaman 32
+Selesai ambil data Prodi 10 (ID 10), Halaman 33
+Selesai ambil data Prodi 10 (ID 10), Halaman 34
+Selesai ambil data Prodi 10 (ID 10), Halaman 35
+Selesai ambil data Prodi 10 (ID 10), Halaman 36
+Selesai ambil data Prodi 10 (ID 10), Halaman 37
+Selesai ambil data Prodi 10 (ID 10), Halaman 38
+Selesai ambil data Prodi 10 (ID 10), Halaman 39
+Selesai ambil data Prodi 10 (ID 10), Halaman 40
+Selesai ambil data Prodi 10 (ID 10), Halaman 41
+Selesai ambil data Prodi 10 (ID 10), Halaman 42
+Selesai ambil data Prodi 10 (ID 10), Halaman 43
+Selesai ambil data Prodi 10 (ID 10), Halaman 44
+Selesai ambil data Prodi 10 (ID 10), Halaman 45
+Selesai ambil data Prodi 10 (ID 10), Halaman 46
+Selesai ambil data Prodi 10 (ID 10), Halaman 47
+Selesai ambil data Prodi 10 (ID 10), Halaman 48
+Selesai ambil data Prodi 10 (ID 10), Halaman 49
+Selesai ambil data Prodi 10 (ID 10), Halaman 50
+Selesai ambil data Prodi 10 (ID 10), Halaman 51
+Selesai ambil data Prodi 10 (ID 10), Halaman 52
+Selesai ambil data Prodi 10 (ID 10), Halaman 53
+Selesai ambil data Prodi 10 (ID 10), Halaman 54
+Selesai ambil data Prodi 10 (ID 10), Halaman 55
+Selesai ambil data Prodi 10 (ID 10), Halaman 56
+Selesai ambil data Prodi 10 (ID 10), Halaman 57
+Selesai ambil data Prodi 10 (ID 10), Halaman 58
+Selesai ambil data Prodi 10 (ID 10), Halaman 59
+Selesai ambil data Prodi 10 (ID 10), Halaman 60
+Selesai ambil data Prodi 10 (ID 10), Halaman 61
+Selesai ambil data Prodi 10 (ID 10), Halaman 62
+Selesai ambil data Prodi 10 (ID 10), Halaman 63
+Selesai ambil data Prodi 10 (ID 10), Halaman 64
+Selesai ambil data Prodi 10 (ID 10), Halaman 65
+Selesai ambil data Prodi 10 (ID 10), Halaman 66
+Selesai ambil data Prodi 10 (ID 10), Halaman 67
+Selesai ambil data Prodi 10 (ID 10), Halaman 68
+Selesai ambil data Prodi 10 (ID 10), Halaman 69
+Selesai ambil data Prodi 10 (ID 10), Halaman 70
+Selesai ambil data Prodi 10 (ID 10), Halaman 71
+Selesai ambil data Prodi 10 (ID 10), Halaman 72
+Selesai ambil data Prodi 10 (ID 10), Halaman 73
+Selesai ambil data Prodi 10 (ID 10), Halaman 74
+Selesai ambil data Prodi 10 (ID 10), Halaman 75
+Selesai ambil data Prodi 10 (ID 10), Halaman 76
+Selesai ambil data Prodi 10 (ID 10), Halaman 77
+Selesai ambil data Prodi 10 (ID 10), Halaman 78
+Selesai ambil data Prodi 10 (ID 10), Halaman 79
+Selesai ambil data Prodi 10 (ID 10), Halaman 80
+Selesai ambil data Prodi 10 (ID 10), Halaman 81
+Selesai ambil data Prodi 10 (ID 10), Halaman 82
+Selesai ambil data Prodi 10 (ID 10), Halaman 83
+Selesai ambil data Prodi 10 (ID 10), Halaman 84
+Selesai ambil data Prodi 10 (ID 10), Halaman 85
+Selesai ambil data Prodi 10 (ID 10), Halaman 86
+Selesai ambil data Prodi 10 (ID 10), Halaman 87
+Selesai ambil data Prodi 10 (ID 10), Halaman 88
+Selesai ambil data Prodi 10 (ID 10), Halaman 89
+Selesai ambil data Prodi 10 (ID 10), Halaman 90
+Selesai ambil data Prodi 10 (ID 10), Halaman 91
+Selesai ambil data Prodi 10 (ID 10), Halaman 92
+Selesai ambil data Prodi 10 (ID 10), Halaman 93
+Selesai ambil data Prodi 10 (ID 10), Halaman 94
+Selesai ambil data Prodi 10 (ID 10), Halaman 95
+Selesai ambil data Prodi 10 (ID 10), Halaman 96
+Selesai ambil data Prodi 10 (ID 10), Halaman 97
+Selesai ambil data Prodi 10 (ID 10), Halaman 98
+Selesai ambil data Prodi 10 (ID 10), Halaman 99
+Selesai ambil data Prodi 10 (ID 10), Halaman 100
+Selesai ambil data Prodi 10 (ID 10), Halaman 101
+Selesai ambil data Prodi 10 (ID 10), Halaman 102
+Selesai ambil data Prodi 10 (ID 10), Halaman 103
+Selesai ambil data Prodi 10 (ID 10), Halaman 104
+Selesai ambil data Prodi 10 (ID 10), Halaman 105
+Selesai ambil data Prodi 10 (ID 10), Halaman 106
+Selesai ambil data Prodi 10 (ID 10), Halaman 107
+Selesai ambil data Prodi 10 (ID 10), Halaman 108
+Selesai ambil data Prodi 10 (ID 10), Halaman 109
+Selesai ambil data Prodi 10 (ID 10), Halaman 110
+Selesai ambil data Prodi 10 (ID 10), Halaman 111
+Selesai ambil data Prodi 10 (ID 10), Halaman 112
+Selesai ambil data Prodi 10 (ID 10), Halaman 113
+Selesai ambil data Prodi 10 (ID 10), Halaman 114
+Selesai ambil data Prodi 10 (ID 10), Halaman 115
+Selesai ambil data Prodi 10 (ID 10), Halaman 116
+Selesai ambil data Prodi 10 (ID 10), Halaman 117
+Selesai ambil data Prodi 10 (ID 10), Halaman 118
+Selesai ambil data Prodi 10 (ID 10), Halaman 119
+Selesai ambil data Prodi 10 (ID 10), Halaman 120
+Selesai ambil data Prodi 10 (ID 10), Halaman 121
+Selesai ambil data Prodi 10 (ID 10), Halaman 122
+Selesai ambil data Prodi 10 (ID 10), Halaman 123
+Selesai ambil data Prodi 10 (ID 10), Halaman 124
+Selesai ambil data Prodi 10 (ID 10), Halaman 125
+Selesai ambil data Prodi 10 (ID 10), Halaman 126
+Selesai ambil data Prodi 10 (ID 10), Halaman 127
+Selesai ambil data Prodi 10 (ID 10), Halaman 128
+Selesai ambil data Prodi 10 (ID 10), Halaman 129
+Selesai ambil data Prodi 10 (ID 10), Halaman 130
+Selesai ambil data Prodi 10 (ID 10), Halaman 131
+Selesai ambil data Prodi 10 (ID 10), Halaman 132
+Selesai ambil data Prodi 10 (ID 10), Halaman 133
+Selesai ambil data Prodi 10 (ID 10), Halaman 134
+Selesai ambil data Prodi 10 (ID 10), Halaman 135
+Selesai ambil data Prodi 10 (ID 10), Halaman 136
+Selesai ambil data Prodi 10 (ID 10), Halaman 137
+Selesai ambil data Prodi 10 (ID 10), Halaman 138
+Selesai ambil data Prodi 10 (ID 10), Halaman 139
+Selesai ambil data Prodi 10 (ID 10), Halaman 140
+Selesai ambil data Prodi 10 (ID 10), Halaman 141
+Selesai ambil data Prodi 10 (ID 10), Halaman 142
+Selesai ambil data Prodi 10 (ID 10), Halaman 143
+Selesai ambil data Prodi 10 (ID 10), Halaman 144
+Selesai ambil data Prodi 10 (ID 10), Halaman 145
+Selesai ambil data Prodi 10 (ID 10), Halaman 146
+Selesai ambil data Prodi 10 (ID 10), Halaman 147
+Selesai ambil data Prodi 10 (ID 10), Halaman 148
+Selesai ambil data Prodi 10 (ID 10), Halaman 149
+Selesai ambil data Prodi 10 (ID 10), Halaman 150
+Selesai ambil data Prodi 10 (ID 10), Halaman 151
+Selesai ambil data Prodi 10 (ID 10), Halaman 152
+Selesai ambil data Prodi 10 (ID 10), Halaman 153
+Selesai ambil data Prodi 10 (ID 10), Halaman 154
+Selesai ambil data Prodi 10 (ID 10), Halaman 155
+Selesai ambil data Prodi 10 (ID 10), Halaman 156
+Selesai ambil data Prodi 10 (ID 10), Halaman 157
+Selesai ambil data Prodi 10 (ID 10), Halaman 158
+Selesai ambil data Prodi 10 (ID 10), Halaman 159
+Selesai ambil data Prodi 10 (ID 10), Halaman 160
+Selesai ambil data Prodi 10 (ID 10), Halaman 161
+Selesai ambil data Prodi 10 (ID 10), Halaman 162
+Selesai ambil data Prodi 10 (ID 10), Halaman 163
+Selesai ambil data Prodi 10 (ID 10), Halaman 164
+Selesai ambil data Prodi 10 (ID 10), Halaman 165
+Selesai ambil data Prodi 10 (ID 10), Halaman 166
+Selesai ambil data Prodi 10 (ID 10), Halaman 167
+Selesai ambil data Prodi 10 (ID 10), Halaman 168
+Selesai ambil data Prodi 10 (ID 10), Halaman 169
+Selesai ambil data Prodi 10 (ID 10), Halaman 170
+Selesai ambil data Prodi 10 (ID 10), Halaman 171
+Selesai ambil data Prodi 10 (ID 10), Halaman 172
+Selesai ambil data Prodi 11 (ID 11), Halaman 1
+Selesai ambil data Prodi 11 (ID 11), Halaman 2
+Selesai ambil data Prodi 11 (ID 11), Halaman 3
+Selesai ambil data Prodi 11 (ID 11), Halaman 4
+Selesai ambil data Prodi 11 (ID 11), Halaman 5
+Selesai ambil data Prodi 11 (ID 11), Halaman 6
+Selesai ambil data Prodi 11 (ID 11), Halaman 7
+Selesai ambil data Prodi 11 (ID 11), Halaman 8
+Selesai ambil data Prodi 11 (ID 11), Halaman 9
+Selesai ambil data Prodi 11 (ID 11), Halaman 10
+Selesai ambil data Prodi 11 (ID 11), Halaman 11
+Selesai ambil data Prodi 11 (ID 11), Halaman 12
+Selesai ambil data Prodi 11 (ID 11), Halaman 13
+Selesai ambil data Prodi 11 (ID 11), Halaman 14
+Selesai ambil data Prodi 11 (ID 11), Halaman 15
+Selesai ambil data Prodi 11 (ID 11), Halaman 16
+Selesai ambil data Prodi 11 (ID 11), Halaman 17
+Selesai ambil data Prodi 11 (ID 11), Halaman 18
+Selesai ambil data Prodi 11 (ID 11), Halaman 19
+Selesai ambil data Prodi 11 (ID 11), Halaman 20
+Selesai ambil data Prodi 11 (ID 11), Halaman 21
+Selesai ambil data Prodi 11 (ID 11), Halaman 22
+Selesai ambil data Prodi 11 (ID 11), Halaman 23
+Selesai ambil data Prodi 11 (ID 11), Halaman 24
+Selesai ambil data Prodi 11 (ID 11), Halaman 25
+Selesai ambil data Prodi 11 (ID 11), Halaman 26
+Selesai ambil data Prodi 11 (ID 11), Halaman 27
+Selesai ambil data Prodi 11 (ID 11), Halaman 28
+Selesai ambil data Prodi 11 (ID 11), Halaman 29
+Selesai ambil data Prodi 11 (ID 11), Halaman 30
+Selesai ambil data Prodi 11 (ID 11), Halaman 31
+Selesai ambil data Prodi 11 (ID 11), Halaman 32
+Selesai ambil data Prodi 11 (ID 11), Halaman 33
+Selesai ambil data Prodi 11 (ID 11), Halaman 34
+Selesai ambil data Prodi 11 (ID 11), Halaman 35
+Selesai ambil data Prodi 11 (ID 11), Halaman 36
+Selesai ambil data Prodi 11 (ID 11), Halaman 37
+Selesai ambil data Prodi 11 (ID 11), Halaman 38
+Selesai ambil data Prodi 11 (ID 11), Halaman 39
+Selesai ambil data Prodi 11 (ID 11), Halaman 40
+Selesai ambil data Prodi 11 (ID 11), Halaman 41
+Selesai ambil data Prodi 11 (ID 11), Halaman 42
+Selesai ambil data Prodi 11 (ID 11), Halaman 43
+Selesai ambil data Prodi 11 (ID 11), Halaman 44
+Selesai ambil data Prodi 11 (ID 11), Halaman 45
+Selesai ambil data Prodi 11 (ID 11), Halaman 46
+Selesai ambil data Prodi 11 (ID 11), Halaman 47
+Selesai ambil data Prodi 11 (ID 11), Halaman 48
+Selesai ambil data Prodi 11 (ID 11), Halaman 49
+Selesai ambil data Prodi 11 (ID 11), Halaman 50
+Selesai ambil data Prodi 11 (ID 11), Halaman 51
+Selesai ambil data Prodi 11 (ID 11), Halaman 52
+Selesai ambil data Prodi 11 (ID 11), Halaman 53
+Selesai ambil data Prodi 11 (ID 11), Halaman 54
+Selesai ambil data Prodi 11 (ID 11), Halaman 55
+Selesai ambil data Prodi 11 (ID 11), Halaman 56
+Selesai ambil data Prodi 19 (ID 19), Halaman 1
+Selesai ambil data Prodi 19 (ID 19), Halaman 2
+Selesai ambil data Prodi 19 (ID 19), Halaman 3
+Selesai ambil data Prodi 19 (ID 19), Halaman 4
+Selesai ambil data Prodi 19 (ID 19), Halaman 5
+Selesai ambil data Prodi 19 (ID 19), Halaman 6
+Selesai ambil data Prodi 19 (ID 19), Halaman 7
+Selesai ambil data Prodi 19 (ID 19), Halaman 8
+Selesai ambil data Prodi 19 (ID 19), Halaman 9
+Selesai ambil data Prodi 19 (ID 19), Halaman 10
+Selesai ambil data Prodi 19 (ID 19), Halaman 11
+Selesai ambil data Prodi 19 (ID 19), Halaman 12
+Selesai ambil data Prodi 19 (ID 19), Halaman 13
+Selesai ambil data Prodi 19 (ID 19), Halaman 14
+Selesai ambil data Prodi 19 (ID 19), Halaman 15
+Selesai ambil data Prodi 19 (ID 19), Halaman 16
+Selesai ambil data Prodi 19 (ID 19), Halaman 17
+Selesai ambil data Prodi 19 (ID 19), Halaman 18
+Selesai ambil data Prodi 19 (ID 19), Halaman 19
+Selesai ambil data Prodi 19 (ID 19), Halaman 20
+Selesai ambil data Prodi 19 (ID 19), Halaman 21
+Selesai ambil data Prodi 19 (ID 19), Halaman 22
+Selesai ambil data Prodi 19 (ID 19), Halaman 23
+Selesai ambil data Prodi 19 (ID 19), Halaman 24
+Selesai ambil data Prodi 19 (ID 19), Halaman 25
+Selesai ambil data Prodi 19 (ID 19), Halaman 26
+Selesai ambil data Prodi 19 (ID 19), Halaman 27
+Selesai ambil data Prodi 20 (ID 20), Halaman 1
+Selesai ambil data Prodi 20 (ID 20), Halaman 2
+Selesai ambil data Prodi 20 (ID 20), Halaman 3
+Selesai ambil data Prodi 20 (ID 20), Halaman 4
+Selesai ambil data Prodi 20 (ID 20), Halaman 5
+Selesai ambil data Prodi 20 (ID 20), Halaman 6
+Selesai ambil data Prodi 20 (ID 20), Halaman 7
+Selesai ambil data Prodi 20 (ID 20), Halaman 8
+Selesai ambil data Prodi 20 (ID 20), Halaman 9
+Selesai ambil data Prodi 20 (ID 20), Halaman 10
+Selesai ambil data Prodi 20 (ID 20), Halaman 11
+Selesai ambil data Prodi 20 (ID 20), Halaman 12
+Selesai ambil data Prodi 20 (ID 20), Halaman 13
+Selesai ambil data Prodi 20 (ID 20), Halaman 14
+Selesai ambil data Prodi 20 (ID 20), Halaman 15
+Selesai ambil data Prodi 20 (ID 20), Halaman 16
+Selesai ambil data Prodi 20 (ID 20), Halaman 17
+Selesai ambil data Prodi 20 (ID 20), Halaman 18
+Selesai ambil data Prodi 20 (ID 20), Halaman 19
+Selesai ambil data Prodi 20 (ID 20), Halaman 20
+Selesai ambil data Prodi 20 (ID 20), Halaman 21
+Selesai ambil data Prodi 20 (ID 20), Halaman 22
+Selesai ambil data Prodi 20 (ID 20), Halaman 23
+Selesai ambil data Prodi 20 (ID 20), Halaman 24
+Selesai ambil data Prodi 20 (ID 20), Halaman 25
+Selesai ambil data Prodi 20 (ID 20), Halaman 26
+Selesai ambil data Prodi 20 (ID 20), Halaman 27
+Selesai ambil data Prodi 20 (ID 20), Halaman 28
+Selesai ambil data Prodi 23 (ID 23), Halaman 1
+Selesai ambil data Prodi 23 (ID 23), Halaman 2
+Selesai ambil data Prodi 23 (ID 23), Halaman 3
+Selesai ambil data Prodi 23 (ID 23), Halaman 4
+Selesai ambil data Prodi 23 (ID 23), Halaman 5
+Selesai ambil data Prodi 23 (ID 23), Halaman 6
+Selesai ambil data Prodi 23 (ID 23), Halaman 7
+Selesai ambil data Prodi 23 (ID 23), Halaman 8
+Selesai ambil data Prodi 23 (ID 23), Halaman 9
+Selesai ambil data Prodi 23 (ID 23), Halaman 10
+Selesai ambil data Prodi 23 (ID 23), Halaman 11
+Selesai ambil data Prodi 23 (ID 23), Halaman 12
+Selesai ambil data Prodi 23 (ID 23), Halaman 13
+Selesai ambil data Prodi 23 (ID 23), Halaman 14
+Selesai ambil data Prodi 23 (ID 23), Halaman 15
+Selesai ambil data Prodi 23 (ID 23), Halaman 16
+Selesai ambil data Prodi 23 (ID 23), Halaman 17
+Selesai ambil data Prodi 23 (ID 23), Halaman 18
+Selesai ambil data Prodi 23 (ID 23), Halaman 19
+Selesai ambil data Prodi 23 (ID 23), Halaman 20
+Selesai ambil data Prodi 23 (ID 23), Halaman 21
+Selesai ambil data Prodi 23 (ID 23), Halaman 22
+Selesai ambil data Prodi 23 (ID 23), Halaman 23
+Selesai ambil data Prodi 23 (ID 23), Halaman 24
+Selesai ambil data Prodi 23 (ID 23), Halaman 25
+Selesai ambil data Prodi 23 (ID 23), Halaman 26
+Selesai ambil data Prodi 23 (ID 23), Halaman 27
+Selesai ambil data Prodi 23 (ID 23), Halaman 28
+Selesai ambil data Prodi 23 (ID 23), Halaman 29
+Selesai ambil data Prodi 23 (ID 23), Halaman 30
+Selesai ambil data Prodi 23 (ID 23), Halaman 31
+Selesai ambil data Prodi 23 (ID 23), Halaman 32
+Selesai ambil data Prodi 23 (ID 23), Halaman 33
+Selesai ambil data Prodi 23 (ID 23), Halaman 34
+Selesai ambil data Prodi 33 (ID 33), Halaman 1
+Selesai ambil data Prodi 33 (ID 33), Halaman 2
+Selesai ambil data Prodi 33 (ID 33), Halaman 3
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 2
-</pre></div>
+<div class="output text_html">
+  <div id="df-bd9d125a-a199-40be-a8b7-7476e7bf0432" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>penulis</th>
+      <th>judul</th>
+      <th>pembimbing_pertama</th>
+      <th>pembimbing_kedua</th>
+      <th>abstrak_bindonesia</th>
+      <th>abstrak_binggris</th>
+      <th>prodi_id</th>
+      <th>nama_prodi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Siliwangi Fitra Rachmawanto S.T.</td>
+      <td>OPTIMASI PEMILIHAN PORTOFOLIO SAHAM PERUSAHAAN...</td>
+      <td>Heri Awalul Ilhamsah S.T., M.T.</td>
+      <td>Retno Indriartiningtias S.T., M.T.</td>
+      <td>Portofolio adalah sekumpulan saham yang dimili...</td>
+      <td>Portofolio is a collection of stock owned by i...</td>
+      <td>9</td>
+      <td>Prodi 9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AHMAD MAS'UD</td>
+      <td>PERANCANGAN TATA LETAK FASILITAS LANTAI PRODUK...</td>
+      <td>SABARUDIN AKHMAD, S.T., M.T.</td>
+      <td>SUGENG PURWOKO, S.T., M.T.</td>
+      <td>PT. ABC merupakan perusahaan yang bergerak dib...</td>
+      <td>PT. ABC is a company engaged in the manufactur...</td>
+      <td>9</td>
+      <td>Prodi 9</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Yulianto Fauzanta</td>
+      <td>PERUMUSAN STRATEGI BISNIS UD. BUDI JAYA BANGKA...</td>
+      <td>Fitri Agustina, S.T., M.T</td>
+      <td>Retno Indriartiningtias, S.T., M.T</td>
+      <td>Bangkalan merupakan salah satu kabupaten yang ...</td>
+      <td>Bangkalan is one of the districts that have th...</td>
+      <td>9</td>
+      <td>Prodi 9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M Mundir Muhlisin</td>
+      <td>USULAN PERBAIKAN UTILITAS RESOURCES PADA LANTA...</td>
+      <td>Mu'alim ST MT</td>
+      <td>Sugeng Purwoko ST MT</td>
+      <td>Simulasi adalah duplikasi atau abstraksi dari ...</td>
+      <td>Simulation is a duplication or abstraction of ...</td>
+      <td>9</td>
+      <td>Prodi 9</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Muhibbin</td>
+      <td>Peningkatan Kepuasan Masyarakat Terhadap Pelay...</td>
+      <td>Rahmad Hidayat</td>
+      <td>Retno Indriartiningtias</td>
+      <td>Kepuasan adalah tingkat perasaan seseorang ter...</td>
+      <td>Satisfaction is feeling level of someone to se...</td>
+      <td>9</td>
+      <td>Prodi 9</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2293</th>
+      <td>MOH TAUFIK HIDAYAT</td>
+      <td>ALAT PENGGULUNG UNTUK MENGATUR KERAPATAN KERTA...</td>
+      <td>FAIKUL UMAM., S.KOM., M.T</td>
+      <td>SRI WAHYUNI., S.KOM., M.T</td>
+      <td>ABSTRAK\n\nKertas merupakan kebutuhan yang dib...</td>
+      <td>ABSTRACT\n\nPaper is a necessity needed by hum...</td>
+      <td>33</td>
+      <td>Prodi 33</td>
+    </tr>
+    <tr>
+      <th>2294</th>
+      <td>Alvian Ainun Fajrih</td>
+      <td>Optimasi Penguapan Air Laut Tua Pada Rumah Kaca</td>
+      <td>Hairil Budiarto, S.T., M.T.</td>
+      <td>Faikul Umam, S.Kom., M.T.</td>
+      <td>Pembuatan garam di Madura umumnya dilakukan de...</td>
+      <td>Making salt in Madura is generally done by hea...</td>
+      <td>33</td>
+      <td>Prodi 33</td>
+    </tr>
+    <tr>
+      <th>2295</th>
+      <td>ADINDA DEBTIANA DWIKA HILDA</td>
+      <td>KESTABILAN KECEPATAN MOBILE ROBOT PADA LINTASA...</td>
+      <td>Faikul Umam, S.Kom., M.T.</td>
+      <td>Sri Wahyuni, S.Kom., M.T.</td>
+      <td>Mobile robot merupakan salah satu kategori rob...</td>
+      <td>Mobile robot is one of the robot categories th...</td>
+      <td>33</td>
+      <td>Prodi 33</td>
+    </tr>
+    <tr>
+      <th>2296</th>
+      <td>Nafizatul Jamilah</td>
+      <td>Rancang Bangun Sistem Otomasi Robot Pengecatan...</td>
+      <td>Hairil Budiarto, S.T., M.T</td>
+      <td>Sri Wahyuni, S.Kom., M.T</td>
+      <td>ABSTRAK\n\nMarka jalan raya adalah sebuah tand...</td>
+      <td>ABSTRACT\n\nA highway mark is a sign that can ...</td>
+      <td>33</td>
+      <td>Prodi 33</td>
+    </tr>
+    <tr>
+      <th>2297</th>
+      <td>Agus Salim</td>
+      <td>Sistem Kestabilan Gerak Robot Omnidirection Me...</td>
+      <td>Vivi Tri W, S.Kom., M.T</td>
+      <td>Ahmad Sahru R, S.Kom., M.T</td>
+      <td>Di era globalisasi ini sangatlah mungkin tekno...</td>
+      <td>In this globalization era, it is very possible...</td>
+      <td>33</td>
+      <td>Prodi 33</td>
+    </tr>
+  </tbody>
+</table>
+<p>2298 rows × 8 columns</p>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 5
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selesai ambil data Prodi 9 (ID 9), Halaman 6
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">71</span>
-<span class="g g-Whitespace">     </span><span class="mi">67</span>     <span class="k">return</span> <span class="n">df</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span> <span class="c1"># Jalankan fungsi</span>
-<span class="ne">---&gt; </span><span class="mi">71</span> <span class="n">pta_KaryaIlmiah</span><span class="p">()</span>
+    <div class="colab-df-buttons">
 
-<span class="nn">Cell In[1], line 39,</span> in <span class="ni">pta_KaryaIlmiah</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">for</span> <span class="n">jurnal</span> <span class="ow">in</span> <span class="n">jurnals</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">38</span>     <span class="n">detail_url</span> <span class="o">=</span> <span class="n">jurnal</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;a.gray.button&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
-<span class="ne">---&gt; </span><span class="mi">39</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">detail_url</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">40</span>     <span class="n">soup1</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">42</span>     <span class="n">isi</span> <span class="o">=</span> <span class="n">soup1</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;div#content_journal&#39;</span><span class="p">)</span>
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bd9d125a-a199-40be-a8b7-7476e7bf0432')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/requests/api.py:73,</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">63</span><span class="w">     </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Sends a GET request.</span>
-<span class="g g-Whitespace">     </span><span class="mi">64</span><span class="sd"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">65</span><span class="sd">     :param url: URL for the new :class:`Request` object.</span>
-<span class="sd">   (...)     70     :rtype: requests.Response</span>
-<span class="g g-Whitespace">     </span><span class="mi">71</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">---&gt; </span><span class="mi">73</span>     <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="s2">&quot;get&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/requests/api.py:59,</span> in <span class="ni">request</span><span class="nt">(method, url, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">55</span> <span class="c1"># By using the &#39;with&#39; statement we are sure the session is closed, thus we</span>
-<span class="g g-Whitespace">     </span><span class="mi">56</span> <span class="c1"># avoid leaving sockets open which can trigger a ResourceWarning in some</span>
-<span class="g g-Whitespace">     </span><span class="mi">57</span> <span class="c1"># cases, and look like a memory leak in others.</span>
-<span class="g g-Whitespace">     </span><span class="mi">58</span> <span class="k">with</span> <span class="n">sessions</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">59</span>     <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/requests/sessions.py:589,</span> in <span class="ni">Session.request</span><span class="nt">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span> <span class="n">send_kwargs</span> <span class="o">=</span> <span class="p">{</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span>     <span class="s2">&quot;timeout&quot;</span><span class="p">:</span> <span class="n">timeout</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">586</span>     <span class="s2">&quot;allow_redirects&quot;</span><span class="p">:</span> <span class="n">allow_redirects</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> <span class="p">}</span>
-<span class="g g-Whitespace">    </span><span class="mi">588</span> <span class="n">send_kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">589</span> <span class="n">resp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">prep</span><span class="p">,</span> <span class="o">**</span><span class="n">send_kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">591</span> <span class="k">return</span> <span class="n">resp</span>
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/requests/sessions.py:703,</span> in <span class="ni">Session.send</span><span class="nt">(self, request, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">700</span> <span class="n">start</span> <span class="o">=</span> <span class="n">preferred_clock</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">702</span> <span class="c1"># Send the request</span>
-<span class="ne">--&gt; </span><span class="mi">703</span> <span class="n">r</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span> <span class="c1"># Total elapsed time of the request (approximately)</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span> <span class="n">elapsed</span> <span class="o">=</span> <span class="n">preferred_clock</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/requests/adapters.py:644,</span> in <span class="ni">HTTPAdapter.send</span><span class="nt">(self, request, stream, timeout, verify, cert, proxies)</span>
-<span class="g g-Whitespace">    </span><span class="mi">641</span>     <span class="n">timeout</span> <span class="o">=</span> <span class="n">TimeoutSauce</span><span class="p">(</span><span class="n">connect</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">read</span><span class="o">=</span><span class="n">timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">643</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">644</span>     <span class="n">resp</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">645</span>         <span class="n">method</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">method</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">646</span>         <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">647</span>         <span class="n">body</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">648</span>         <span class="n">headers</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">649</span>         <span class="n">redirect</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">650</span>         <span class="n">assert_same_host</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">651</span>         <span class="n">preload_content</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">652</span>         <span class="n">decode_content</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">653</span>         <span class="n">retries</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_retries</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">654</span>         <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">655</span>         <span class="n">chunked</span><span class="o">=</span><span class="n">chunked</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">656</span>     <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">658</span> <span class="k">except</span> <span class="p">(</span><span class="n">ProtocolError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">)</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">659</span>     <span class="k">raise</span> <span class="ne">ConnectionError</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="n">request</span><span class="p">)</span>
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py:787,</span> in <span class="ni">HTTPConnectionPool.urlopen</span><span class="nt">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">784</span> <span class="n">response_conn</span> <span class="o">=</span> <span class="n">conn</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">release_conn</span> <span class="k">else</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">786</span> <span class="c1"># Make the request on the HTTPConnection object</span>
-<span class="ne">--&gt; </span><span class="mi">787</span> <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_request</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">788</span>     <span class="n">conn</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">789</span>     <span class="n">method</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">790</span>     <span class="n">url</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">791</span>     <span class="n">timeout</span><span class="o">=</span><span class="n">timeout_obj</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">792</span>     <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">793</span>     <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">794</span>     <span class="n">chunked</span><span class="o">=</span><span class="n">chunked</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">795</span>     <span class="n">retries</span><span class="o">=</span><span class="n">retries</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">796</span>     <span class="n">response_conn</span><span class="o">=</span><span class="n">response_conn</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">797</span>     <span class="n">preload_content</span><span class="o">=</span><span class="n">preload_content</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">798</span>     <span class="n">decode_content</span><span class="o">=</span><span class="n">decode_content</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">799</span>     <span class="o">**</span><span class="n">response_kw</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">800</span> <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">802</span> <span class="c1"># Everything went great!</span>
-<span class="g g-Whitespace">    </span><span class="mi">803</span> <span class="n">clean_exit</span> <span class="o">=</span> <span class="kc">True</span>
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py:534,</span> in <span class="ni">HTTPConnectionPool._make_request</span><span class="nt">(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span> <span class="c1"># Receive the response from the server</span>
-<span class="g g-Whitespace">    </span><span class="mi">533</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">534</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">535</span> <span class="k">except</span> <span class="p">(</span><span class="n">BaseSSLError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">536</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_raise_timeout</span><span class="p">(</span><span class="n">err</span><span class="o">=</span><span class="n">e</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout_value</span><span class="o">=</span><span class="n">read_timeout</span><span class="p">)</span>
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
 
-<span class="nn">File /workspaces/PPW-190/.venv/lib/python3.12/site-packages/urllib3/connection.py:565,</span> in <span class="ni">HTTPConnection.getresponse</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">562</span> <span class="n">_shutdown</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sock</span><span class="p">,</span> <span class="s2">&quot;shutdown&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">564</span> <span class="c1"># Get the response from http.client.HTTPConnection</span>
-<span class="ne">--&gt; </span><span class="mi">565</span> <span class="n">httplib_response</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">567</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">568</span>     <span class="n">assert_header_parsing</span><span class="p">(</span><span class="n">httplib_response</span><span class="o">.</span><span class="n">msg</span><span class="p">)</span>
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bd9d125a-a199-40be-a8b7-7476e7bf0432 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
 
-<span class="nn">File ~/.python/current/lib/python3.12/http/client.py:1419,</span> in <span class="ni">HTTPConnection.getresponse</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1417</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1418</span>     <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1419</span>         <span class="n">response</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1420</span>     <span class="k">except</span> <span class="ne">ConnectionError</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1421</span>         <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bd9d125a-a199-40be-a8b7-7476e7bf0432');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
 
-<span class="nn">File ~/.python/current/lib/python3.12/http/client.py:331,</span> in <span class="ni">HTTPResponse.begin</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">329</span> <span class="c1"># read until we get a non-100 response</span>
-<span class="g g-Whitespace">    </span><span class="mi">330</span> <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">331</span>     <span class="n">version</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_status</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">332</span>     <span class="k">if</span> <span class="n">status</span> <span class="o">!=</span> <span class="n">CONTINUE</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">333</span>         <span class="k">break</span>
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
 
-<span class="nn">File ~/.python/current/lib/python3.12/http/client.py:292,</span> in <span class="ni">HTTPResponse._read_status</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">291</span> <span class="k">def</span><span class="w"> </span><span class="nf">_read_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">292</span>     <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fp</span><span class="o">.</span><span class="n">readline</span><span class="p">(</span><span class="n">_MAXLINE</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;iso-8859-1&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">293</span>     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">_MAXLINE</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">294</span>         <span class="k">raise</span> <span class="n">LineTooLong</span><span class="p">(</span><span class="s2">&quot;status line&quot;</span><span class="p">)</span>
 
-<span class="nn">File ~/.python/current/lib/python3.12/socket.py:707,</span> in <span class="ni">SocketIO.readinto</span><span class="nt">(self, b)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span> <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>     <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">707</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sock</span><span class="o">.</span><span class="n">recv_into</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">708</span>     <span class="k">except</span> <span class="n">timeout</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_timeout_occurred</span> <span class="o">=</span> <span class="kc">True</span>
+    <div id="df-ba75f1da-8012-4831-88f8-59c9586a6b81">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ba75f1da-8012-4831-88f8-59c9586a6b81')"
+                title="Suggest charts"
+                style="display:none;">
 
-<span class="nn">File ~/.python/current/lib/python3.12/ssl.py:1253,</span> in <span class="ni">SSLSocket.recv_into</span><span class="nt">(self, buffer, nbytes, flags)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1249</span>     <span class="k">if</span> <span class="n">flags</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1250</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1251</span>           <span class="s2">&quot;non-zero flags not allowed in calls to recv_into() on </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span>
-<span class="g g-Whitespace">   </span><span class="mi">1252</span>           <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1253</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nbytes</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1254</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1255</span>     <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">recv_into</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">nbytes</span><span class="p">,</span> <span class="n">flags</span><span class="p">)</span>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
 
-<span class="nn">File ~/.python/current/lib/python3.12/ssl.py:1105,</span> in <span class="ni">SSLSocket.read</span><span class="nt">(self, len, buffer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1103</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1104</span>     <span class="k">if</span> <span class="n">buffer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1105</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1106</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1107</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
 
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
-</div>
-</div>
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-ba75f1da-8012-4831-88f8-59c9586a6b81 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
 </div>
 </section>
 
