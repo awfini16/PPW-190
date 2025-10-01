@@ -25,19 +25,37 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# === Upload file CSV dari lokal ===
-from google.colab import files
-uploaded = files.upload()   # pilih file "data_artikel_berita.csv"
+import pandas as pd
+import string
+import re
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from spellchecker import SpellChecker
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+import nltk
 
 ------------------
 
 
 [31m---------------------------------------------------------------------------[39m
 [31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[4][39m[32m, line 2[39m
-[32m      1[39m [38;5;66;03m# === Upload file CSV dari lokal ===[39;00m
-[32m----> [39m[32m2[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mgoogle[39;00m[34;01m.[39;00m[34;01mcolab[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m files
-[32m      3[39m uploaded = files.upload()   [38;5;66;03m# pilih file "data_artikel_berita.csv"[39;00m
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 6[39m
+[32m      4[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mnltk[39;00m[34;01m.[39;00m[34;01mtokenize[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m word_tokenize
+[32m      5[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mnltk[39;00m[34;01m.[39;00m[34;01mcorpus[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m stopwords
+[32m----> [39m[32m6[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mspellchecker[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m SpellChecker
+[32m      7[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mSastrawi[39;00m[34;01m.[39;00m[34;01mStemmer[39;00m[34;01m.[39;00m[34;01mStemmerFactory[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m StemmerFactory
+[32m      8[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnltk[39;00m
 
-[31mModuleNotFoundError[39m: No module named 'google'
+[36mFile [39m[32m/usr/local/python/3.12.1/lib/python3.12/site-packages/spellchecker/__init__.py:2[39m
+[32m      1[39m [38;5;66;03m# -*- coding: utf-8 -*-[39;00m
+[32m----> [39m[32m2[39m [38;5;28;01mfrom[39;00m[38;5;250m  [39m[34;01mspellchecker[39;00m[34;01m.[39;00m[34;01mcore[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m Spellchecker,getInstance
+
+[36mFile [39m[32m/usr/local/python/3.12.1/lib/python3.12/site-packages/spellchecker/core.py:26[39m
+[32m     23[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01minexactsearch[39;00m
+[32m     24[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01murllib[39;00m
+[32m---> [39m[32m26[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mindexer[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m DictionaryIndex
+[32m     27[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mlangdetect[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m _detect_lang
+[32m     29[39m __all__ = [[33m'[39m[33mSpellchecker[39m[33m'[39m, [33m'[39m[33mgetInstance[39m[33m'[39m]
+
+[31mModuleNotFoundError[39m: No module named 'indexer'
 

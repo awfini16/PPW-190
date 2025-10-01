@@ -31,7 +31,13 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-res = builtwith.parse('https://www2.trunojoyo.ac.id/')
-print(res)
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+stemmer = StemmerFactory().create_stemmer()
+
+# Stemming
+df["stemming"] = df["stopword_removal"].apply(lambda tokens: [stemmer.stem(w) for w in tokens])
+
+print("=== Hasil Stemming ===")
+print(df[["stopword_removal", "stemming"]].head())
 -------------------
 

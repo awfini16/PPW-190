@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -183,12 +183,16 @@
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Web Mining</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">crawling menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crawling_PTA.html">Crawling PTA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="crawlingh_berita.html">Crawling Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PPWCrawlingLink.html">Crawling Link</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="preprosesing_PTA.html">preprocessing PTA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preprosesing_berita.html">Preprocessing Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawling_berita.html">Crawling Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing Berita &amp; PTA</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="berita.html">TF-IDF berita</a></li>
+
+
 </ul>
 
     </div>
@@ -400,9 +404,7 @@ Requirement already satisfied: lxml in /usr/local/python/3.12.1/lib/python3.12/s
 Requirement already satisfied: requests in /home/codespace/.local/lib/python3.12/site-packages (from sprynger) (2.32.4)
 Requirement already satisfied: urllib3 in /home/codespace/.local/lib/python3.12/site-packages (from sprynger) (2.5.0)
 Requirement already satisfied: platformdirs in /home/codespace/.local/lib/python3.12/site-packages (from sprynger) (4.3.8)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /home/codespace/.local/lib/python3.12/site-packages (from requests-&gt;sprynger) (3.4.2)
+Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /home/codespace/.local/lib/python3.12/site-packages (from requests-&gt;sprynger) (3.4.2)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/codespace/.local/lib/python3.12/site-packages (from requests-&gt;sprynger) (3.10)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/lib/python3.12/site-packages (from requests-&gt;sprynger) (2025.7.9)
 </pre></div>
@@ -467,7 +469,7 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/l
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🔎 Keyword: web mining
-Total hasil: 47827
+Total hasil: 48133
 
 DOI: 10.1007/978-3-031-98238-5_1
 Title: Introduction
@@ -475,33 +477,36 @@ Title: Introduction
 DOI: 10.1007/978-3-031-98238-5_8
 Title: Moana Matters: Culture and Deep Sea Mining in Oceania
 
+DOI: 10.1007/978-3-032-00056-9_5
+Title: Strategic and Comprehensive: Modeling MOOC Learner Behavior Through Process Mining of Learning Sequences
+
+DOI: 10.1007/978-981-96-5527-4_79
+Title: Path Planning System Design for Autonomous Haulage in Semi-Structured Environments
+
 DOI: 10.1007/978-981-96-6894-6_2
 Title: Literature Review of Learning Engagement Research
 
 DOI: 10.1007/978-3-032-02088-8_5
 Title: ONFOODS: A Substitute Recommendation System in Food Recipes
 
+DOI: 10.1007/978-3-032-02500-5_5
+Title: Rights, Freedom, Equality, Security: Open Questions. For an Appeal to European Legal Science
+
+DOI: 10.1007/978-981-95-1017-7_14
+Title: Biological Threats: Insect Pests, Diseases, and Mammal Damage
+
 DOI: 10.1007/978-3-032-05002-1_4
 Title: An Exploration to Enhance Response Rate and Sampling Density During ESM Experiments by Online Supervised Learning and Edge Computing on Smartwatches
 
-DOI: 10.1007/978-3-032-02515-9_5
-Title: A Silent Partner: The Shadow Presence of Generative Artificial Intelligence in Public Administrations
-
-DOI: 10.1007/978-3-031-88974-5_52
-Title: Development of New Road Traffic Safety Assessment Methodology
-
-DOI: 10.1007/978-3-032-05036-6_12
-Title: Re-voting Under Surveillance: National eID Transaction Logs as a Threat to Coercion Resistance in Estonian Internet Voting
-
-DOI: 10.1007/s10549-025-07791-7
-Title: Pharmacological interventions for anthracycline-induced cardiotoxicity in breast cancer: a systematic review and meta-analysis of randomized controlled trials
-
-DOI: 10.1007/s43681-025-00678-9
-Title: A new epoch of face analytics: technological evolution through ethical and legal challenges
+DOI: 10.1007/978-3-032-02500-5_6
+Title: Which Data Governance for a Social Post-pandemic Recovery?
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🔎 Keyword: web usage mining
-Total hasil: 13400
+Total hasil: 13490
+
+DOI: 10.1007/978-981-96-5527-4_79
+Title: Path Planning System Design for Autonomous Haulage in Semi-Structured Environments
 
 DOI: 10.1007/978-3-032-02088-8_5
 Title: ONFOODS: A Substitute Recommendation System in Food Recipes
@@ -515,23 +520,20 @@ Title: An Exploration to Enhance Response Rate and Sampling Density During ESM E
 DOI: 10.1007/978-3-032-05036-6_12
 Title: Re-voting Under Surveillance: National eID Transaction Logs as a Threat to Coercion Resistance in Estonian Internet Voting
 
-DOI: 10.1007/s43681-025-00678-9
-Title: A new epoch of face analytics: technological evolution through ethical and legal challenges
+DOI: 10.1007/978-3-032-02500-5_4
+Title: The Common European Data Space(s). A Governance Model “the European Way”
 
-DOI: 10.1007/s11116-024-10485-6
-Title: The influence of app function evolution on transport SuperApp use behaviour over time
+DOI: 10.1007/s10100-024-00932-1
+Title: Does cross-validation work in telling rankings apart?
 
-DOI: 10.1007/s43681-025-00797-3
-Title: Deconstructing the ethics of large language models from long-standing issues to new-emerging dilemmas: a survey
+DOI: 10.1007/s41060-025-00777-0
+Title: Large-scale simulation study of active learning models for systematic reviews
 
-DOI: 10.1007/s43681-025-00765-x
-Title: AI and the future of creative development: redefining digital media production
+DOI: 10.1007/s41060-025-00807-x
+Title: A Review on Privacy-Preserving Techniques for Spatiotemporal Data
 
-DOI: 10.1007/s10270-025-01264-7
-Title: Model-driven engineering for digital twins: a systematic mapping study
-
-DOI: 10.1007/s43681-025-00721-9
-Title: Systematic literature review on bias mitigation in generative AI
+DOI: 10.1007/s41060-025-00816-w
+Title: Synthetic Data Generation for Healthcare: Exploring Generative Adversarial Networks Variants for Medical Tabular Data
 
 
 ✅ Data berhasil disimpan ke springer_results.csv

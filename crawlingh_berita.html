@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'crawlingh_berita';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Crawling Link" href="PPWCrawlingLink.html" />
-    <link rel="prev" title="Crawling PTA" href="crawling_PTA.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,11 +179,18 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas.html">Pengantar Web Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawling_menu.html">crawling menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crawling_PTA.html">Crawling PTA</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling Berita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PPWCrawlingLink.html">Crawling Link</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="crawling_berita.html">Crawling Berita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing Berita &amp; PTA</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="berita.html">TF-IDF berita</a></li>
 
 
 </ul>
@@ -460,66 +467,65 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/l
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Arus Lalin di Sekitar DPR Macet, Ini Penyebabnya
-2. Sikap Kabareskrim Polri soal Permintaan Istri Gus Dur hingga Mantan Menag Terkait Delpedro...
-3. Cegah Kasus di Program MBG, Begini Cara SPPG Palmerah Pastikan Makanan Aman dan Gizi Terpe...
-4. 959 Jadi Tersangka Kerusuhan di Demo Agustus, Ratusan Anak Terlibat di Dalamnya
-5. Dasco Sebut Kementerian BUMN Akan Diubah Jadi Badan Penyelenggara BUMN
-6. Kabar Gembira Buat Warga Jakarta, Pemprov Beri Keringanan Pajak PBB, Hiburan, hingga Kenda...
-7. Cara Mudah Cek Bansos September 2025: PKH dan BPNT Cair Tahap 3
-8. KPK Cecar Biro Travel soal Cara Dapatkan Kuota Haji Khusus dari Kemenag era Gus Yaqut
-9. Peringatan Hari Tani, Ini Daftar Usulan PDIP agar Petani Bisa Berdikari
-10. Kepala BGN Minta SPPG Perbaiki Pola Masak Imbas Banyak Kasus Keracunan MBG
-11. Diikuti 27 Ribu Peserta, Wondr Jakarta Running Festival 2025 Siap Digelar di Jakarta
-12. Korban Keracunan MBG di Cipongkor Bandung Barat Capai 631 Orang, Siswa sampai Alami Mual ...
-13. Cak Imin: Hanya Prabowo, Presiden Setelah Bung Karno yang Berhasil Pidato dengan Baik di F...
-14. Hari Tani, GMNI Suarakan Marhaenisme Lahir dari Petani
-15. Peringati Hari Tani, Cak Imin: Maaf 27 Tahun Berdiri, PKB Belum Bisa Sejahterakan Petani
-16. Pramono Tegaskan Jakarta Masih Berstatus Ibu Kota Negara Usai IKN Jadi Ibu Kota Politik
-17. Marak Keracunan Massal MBG, DPR Usul BGN Gandeng Mendikdasmen Cari Solusi Cepat dan Tepat
-18. 5 Biro Perjalanan Dicecar KPK Terkait Permintaan Uang di Kasus Kuota Haji
-19. Cak Imin soal Banyak Siswa Keracunan MBG: Saya Minta BGN Tuntaskan Masalah
-20. Belanja Rokok Lebih Besar Daripada Beli Beras, Bikin Anak Stunting
-21. Pidato Prabowo di Sidang PBB: Mari Gunakan Sains untuk Membangkitkan, Bukan Menghancurkan
-22. PDIP Tangsel Rayakan Hari Tani Nasional, Dorong Lahirnya Kelompok Tani di Tengah Keterbata...
-23. Memilukan, Begini Kondisi Bocah Perempuan 8 Tahun Ditemukan Tewas di Kos Penjaringan Jakut
-24. Legislator PKB Dorong Pemprov DKI Lengkapi Sarpras di Tingkat RT dan RW untuk Cegah Tawura...
-25. TNI Gencarkan &#39;Serbuan Teritorial&#39; di Dekat Rumah Prabowo, Ini Sederet Aksinya
-26. Rakernas Dekranas 2025, Tri Tito Tekankan Peran Penting Kerajinan Nasional bagi Kesejahter...
-27. Curhat Farida Ditunjuk jadi Wakil Menteri Koperasi: Judulnya Mendadak Wamen
-28. Apresiasi Adhyaksa Awards 2025, Mendagri Tekankan Pentingnya Kompetisi Sehat bagi Jaksa
-29. Ada Demo, Cek Rute Rute Pengalihan Arus Depan Gedung DPR Hari Ini
-30. Mengenal Brigade Parako 2 Pasgat, Pasukan Elite yang Bakal Meriahkan HUT ke-80 TNI
-31. Lesehan di Sawah Bareng Petani, Hasto Bawa Pesan Megawati Jaga Lahan Subur agar Tak Jadi K...
-32. Blak-blakan Isran Noor soal Kasus Dugaan Korupsi Dana Hibah DBON
-33. KPK Turun Tangan, Jawab Aduan Wabup Jember yang Laporkan Bupatinya Sendiri
-34. Kapolda Metro ke Polisi Jaga Demo di DPR: Gas Air Mata Hanya Boleh Atas Perintah Saya, Jan...
-35. Reaksi Polda Metro Usai Istri Gus Dur hingga Mantan Menag Jamin Penangguhan Penahanan Delp...
-36. Daftar Negara yang Mengakui dan Tidak Mengakui Palestina
-37. Ada Demo Hari Tani di DPR, Begini Cara Polisi Cegah Masuknya Penyusup Berpotensi Tebar Pro...
-38. Aksi Demo Saat Hari Tani Nasional Rabu 24 September 2025, Ribuan Personel Disiagakan
-39. Duduk Satu Meja dengan Prabowo dan Erdogan, Donald Trump: Kita akan Akhiri Perang di Gaza
-40. Hari Tani Nasional 24 September: Momentum Reforma Agraria, Hilirisasi hingga Lumbung Panga...
-41. Prabowo Subianto: Profil Lengkap dan Kiprah Sebagai Presiden RI ke-8
-42. Hari Tani Nasional 2025, Begini Makna dan Sejarahnya
-43. Bobby Nasution Wujudkan UHC di Sumut, Berobat Cukup Tunjukkan KTP
-44. Top 3 News: Istri Gus Dur hingga Mantan Menag jadi Penjamin Penangguhan Penahanan Delpedro...
-45. Layanan Samsat Keliling Hadir di 14 Wilayah Jadetabek, Cek Selengkapnya!
-46. Ganjil Genap Jakarta Rabu 24 September 2025, Periksa Lagi Pelat Kendaraanmu!
-47. Kenapa Prabowo Minta Telur Ceplok Bukan Didadar dalam Menu MBG?
-48. Prakiraan Cuaca BMKG: Sebagian Jakarta Diguyur Hujan Malam Nanti, Rabu 24 September 2025
-49. 24 September Diperingati Sebagai Hari Apa? Berikut Daftarnya!
-50. Temuan Penting di Balik Keracunan Massal Makan Bergizi Gratis
-51. Presiden Prabowo Dapat Apresiasi Pemimpin Dunia Usai Berpidato di Sidang Umum PBB
-52. Presiden Prabowo Tegaskan Komitmen Indonesia Dukung PBB
-53. Usai Viral, Wali Kota Tangsel Tak Kapok Unggah Laporan Anggaran ke Publik
-54. Warga Kedoya Selatan Geger, Ibu Rumah Tangga Ditemukan Tewas Diduga Dibunuh Suami
-55. 6 Fakta Terkait Ratusan Siswa di Garut Diduga Keracunan MBG: Polisi Turun Tangan, Dapur Pe...
-56. Mendagri Ingatkan Pemda: Jangan Biarkan Inflasi Ganggu Daya Beli
-57. Di Sidang Umum PBB, Prabowo Sebut Indonesia Akan Bangun Giant Sea Wall 480 Kilometer
-58. Prabowo di Sidang Umum PBB, Singgung Kondisi Dunia Dilanda Konflik hingga Genosida
-59. Prabowo di Sidang Umum PBB, Minta Dunia Tak Diam Lihat Penderitaan Palestina
-60. Sidang Umum PBB, Prabowo Pamer RI Capai Swasembada Beras dan Ekspor ke Palestina
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Ditjenpas Kembali Pindahkan 41 Napi Risiko Tinggi dari Berbagai Daerah ke Nusakambangan
+2. Konsultan Hukum Cabuli Anak di Bawah Umur, Rayu Korban dengan Uang dan Ponsel
+3. Insiden Wartawan Dicekik Saat Liput Dapur MBG Berujung Damai, Pelaku Akui Khilaf
+4. Detik-Detik Api Berkobar di Hunian Pekerja Konstruksi IKN, Seluruh Penghuni Berhasil Dieva...
+5. Kebakaran Hunian Pekerja Konstruksi IKN Terjadi di Tower 14, Api Berhasil Dipadamkan
+6. Sikap Ketua DPR Puan Maharani saat Indonesia Raya Dinilai Sesuai Aturan, Tak Harus Hormat ...
+7. Emak-Emak Nekat Siram Polisi Pakai Bensin Depan Mapolres Sragen
+8. Jelang 72 Jam Pencarian, Kepala Basarnas Minta Area Reruntuhan Pesantren Al Khoziny Dikoso...
+9. SAS Institute Dorong Optimisme atas Program MBG, Diyakini Bisa Perkuat Ketahanan Pangan
+10. Gara-Gara Hutang Piutang, Pemilik Agen Gas di Jakbar Tewas Ditikam Kerabatnya Sendiri
+11. Kubu Mardiono Juga Klaim Telah Serahkan Hasil Muktamar X PPP ke Kemenkum
+12. DPR Usul Dapur MBG Dibangun di Sekolah: Orang Tua Bisa Terlibat, Belanjanya di Pasar Terde...
+13. Kubu Agus Suparmanto Serahkan Hasil Muktamar X PPP ke Kemenkum
+14. Begini Isi Peraturan Kapolri Nomor 4 Tahun 2025 Terkait Penindakan Aksi Penyerangan Anggot...
+15. DPR Bersama Pemerintah dan Asosiasi Pengemudi Sepakat Bentuk Tim Penyusun Revisi UU LLAJ
+16. Kepala BGN Jawab Usulan Anggota DPR Hapus Kata Gratis pada MBG
+17. Satu Bulan Hilang, Jejak Terakhir Farhan di Kwitang
+18. Kawanan Emak-Emak jadi Copet di Pasar Jambi, Modusnya Pura-Pura Beli Bawang Lalu Gasak Dom...
+19. Lihat CCTV dari HP, Ayah di Depok Kaget ART Aniaya Dua Anak Balitanya
+20. Ketua Prodi Kedokteran Undip Divonis 2 Tahun Penjara karena Terbukti Peras Mahasiswa PPDS
+21. Mensos dan Wamensos Hadiri Upacara Hari Kesaktian Pancasila di Lubang Buaya
+22. Dedi Mulyadi: Pemutihan Pajak Kendaraan di Jabar Berakhir, Lihat dan Rasakan Hasilnya
+23. Sejarah Gempa Besar di Sumenep, Pernah Tewaskan 3 Orang
+24. Anggota DPR Ini Usul Kata Gratis pada MBG Dihapus, Beberkan Alasannya
+25. Komplotan Begal Menyamar jadi Debt Collector, Modus Tagih Tunggakan ke Korban Lalu Motor D...
+26. Kisruh Dualisme PPP, Begini Kata Kementerian Hukum
+27. Sosok Lukmanul Hakim, Ulama yang Jadikan Sertifikasi Halal Senjata UMKM Kini Berpulang
+28. Aturan Uang Pensiun Anggota DPR Digugat ke MK: Jabat 5 Tahun, Dapat Pensiun Seumur Hidup
+29. Ada Peringatan HUT ke-80 TNI di Monas, Car Free Day Jakarta 5 Oktober 2025 Tetap Digelar
+30. Anggota DPR Rapat dengan Kepala BGN: Siapa Politisi Minta Dapur? Tunjuk Hidungnya
+31. Dinas KPKP: Buruk Merak di Rumah Bamsoet Tidak Termasuk Hewan Dilindungi
+32. Seorang Pria di Cilincing Nekat Akhiri Hidupnya, Diduga Frustasi Akibat Judi Online
+33. Kasus Keracunan MBG, BGN Akui Banyak SPPG Belum Punya Sanitasi yang Baik
+34. Kepala BGN Minta SPPG Masak Menu MBG Pakai Air Galon Cegah Keracunan Berulang
+35. Komisi II soal Bobby Nasution Minta Truk Aceh Ganti Pelat: Itu Upaya Dongkrak PAD
+36. MBG Perlu Perbaikan Tata Kelola
+37. Wanita Melahirkan Bayi di Toilet OYO, Suami Sirinya Usia 22 Tahun Panik
+38. Prabowo akan Terbitkan Perpres Tata Kelola MBG: SPPG Harus Punya Chef Terlatih, Makanan Di...
+39. Rapat di DPR, Kepala BGN Ungkap 75 Kasus Keracunan MBG Sejak Januari dengan Korban 6.517 S...
+40. HUT ke-80 TNI: Naik Transjakarta, MRT, dan LRT Hanya Rp 80
+41. Peran Pemda Kawal Program MBG Perlu Diperkuat
+42. Terungkap Penyebab Keracunan Massal MBG: SPPG Beli Bahan dan Masak Makanan Tak Sesuai Stan...
+43. Dewan Komisaris TASPEN Luncurkan TASBOARD, Perkuat Transparansi dan Efektivitas Pengawasan
+44. Logo dan Tema HUT TNI 2025, Simak Info Acara Puncaknya
+45. Cerita Udang Beku Terpapar Radiasi Berbahaya dari Cikande
+46. Pramono Resmikan Taman Bugar di Jakbar, Hasil Serap Aspirasi Masyarakat
+47. Polisi Gagalkan Penyulundupan 16 CPMI Non Prosedural, 2 Pelaku Dibekuk di Soetta
+48. Musala Pesantren Al Khoziny Ambruk, DPR Minta Pemerintah Beri Pendampingan Pembangunan di ...
+49. Kasus Bocah Perempuan Tewas Membusuk di Jakut, Warga Lihat Wajah Korban Penuh Lebam dan Se...
+50. Tragedi Ambruknya Musala Empat Lantai di Ponpes Al-Khoziny Sidoarjo: Kronologi dan Fakta T...
+51. Taksi Online Parkir 3 Hari di Pinggir Jalan, Sopirnya Ternyata Sudah Meninggal
+52. Top 3 News: KPK Sita Rp 1,3 Miliar dari Ilham Habibie, Mobilnya Dikembalikan
+53. Kolonel Pnb. Amry Taufany Jadi Komandan Upacara Peringatan Hari Kesaktian Pancasila 2025
+54. Kecanduan Handphone, Remaja Indonesia Kesepian
+55. Prabowo Pimpin Upacara Peringatan Hari Kesaktian Pancasila 2025 di Lubang Buaya
+56. Diam-Diam Prabowo Pantau Kinerja Menkeu Purbaya via Medsos
+57. Pemerintah Pusat Pangkas Dana Transfer, APBD DKI 2026 Terancam Anjlok Signifikan
+58. Awal Bulan, Simak Aturan Ganjil Genap yang Berlaku Rabu 1 Oktober 2025
+59. Sehari di Dapur MBG Segi Antara, Bekerja Mulai Tengah Malam Demi Makan Gratis Siswa Depok
 </pre></div>
 </div>
 </div>
@@ -541,66 +547,65 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/l
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Daftar Link:
-1. https://www.liputan6.com/news/read/6167969/arus-lalin-di-sekitar-dpr-macet-ini-penyebabnya
-2. https://www.liputan6.com/news/read/6167967/sikap-kabareskrim-polri-soal-permintaan-istri-gus-dur-hingga-mantan-menag-terkait-delpedro-cs
-3. https://www.liputan6.com/news/read/6167942/cegah-kasus-di-program-mbg-begini-cara-sppg-palmerah-pastikan-makanan-aman-dan-gizi-terpenuhi
-4. https://www.liputan6.com/news/read/6167832/959-jadi-tersangka-kerusuhan-di-demo-agustus-ratusan-anak-terlibat-di-dalamnya
-5. https://www.liputan6.com/news/read/6167835/dasco-sebut-kementerian-bumn-akan-diubah-jadi-badan-penyelenggara-bumn
-6. https://www.liputan6.com/news/read/6167825/kabar-gembira-buat-warga-jakarta-pemprov-beri-keringanan-pajak-pbb-hiburan-hingga-kendaraan
-7. https://www.liputan6.com/news/read/6167789/cara-mudah-cek-bansos-september-2025-pkh-dan-bpnt-cair-tahap-3
-8. https://www.liputan6.com/news/read/6167736/kpk-cecar-biro-travel-soal-cara-dapatkan-kuota-haji-khusus-dari-kemenag-era-gus-yaqut
-9. https://www.liputan6.com/news/read/6167706/peringatan-hari-tani-ini-daftar-usulan-pdip-agar-petani-bisa-berdikari
-10. https://www.liputan6.com/news/read/6167715/kepala-bgn-minta-sppg-perbaiki-pola-masak-imbas-banyak-kasus-keracunan-mbg
-11. https://www.liputan6.com/news/read/6167694/diikuti-27-ribu-peserta-wondr-jakarta-running-festival-2025-siap-digelar-di-jakarta
-12. https://www.liputan6.com/news/read/6167677/korban-keracunan-mbg-di-cipongkor-bandung-barat-capai-631-orang-siswa-sampai-alami-mual-hingga-kejang
-13. https://www.liputan6.com/news/read/6167629/cak-imin-hanya-prabowo-presiden-setelah-bung-karno-yang-berhasil-pidato-dengan-baik-di-forum-pbb
-14. https://www.liputan6.com/news/read/6167946/hari-tani-gmni-suarakan-marhaenisme-lahir-dari-petani
-15. https://www.liputan6.com/news/read/6167528/peringati-hari-tani-cak-imin-maaf-27-tahun-berdiri-pkb-belum-bisa-sejahterakan-petani
-16. https://www.liputan6.com/news/read/6167608/pramono-tegaskan-jakarta-masih-berstatus-ibu-kota-negara-usai-ikn-jadi-ibu-kota-politik
-17. https://www.liputan6.com/news/read/6167585/marak-keracunan-massal-mbg-dpr-usul-bgn-gandeng-mendikdasmen-cari-solusi-cepat-dan-tepat
-18. https://www.liputan6.com/news/read/6167623/5-biro-perjalanan-dicecar-kpk-terkait-permintaan-uang-di-kasus-kuota-haji
-19. https://www.liputan6.com/news/read/6167562/cak-imin-soal-banyak-siswa-keracunan-mbg-saya-minta-bgn-tuntaskan-masalah
-20. https://www.liputan6.com/news/read/6167535/belanja-rokok-lebih-besar-daripada-beli-beras-bikin-anak-stunting
-21. https://www.liputan6.com/news/read/6167532/pidato-prabowo-di-sidang-pbb-mari-gunakan-sains-untuk-membangkitkan-bukan-menghancurkan
-22. https://www.liputan6.com/news/read/6167761/pdip-tangsel-rayakan-hari-tani-nasional-dorong-lahirnya-kelompok-tani-di-tengah-keterbatasan-lahan
-23. https://www.liputan6.com/news/read/6167523/memilukan-begini-kondisi-bocah-perempuan-8-tahun-ditemukan-tewas-di-kos-penjaringan-jakut
-24. https://www.liputan6.com/news/read/6167762/legislator-pkb-dorong-pemprov-dki-lengkapi-sarpras-di-tingkat-rt-dan-rw-untuk-cegah-tawuran
-25. https://www.liputan6.com/news/read/6167441/tni-gencarkan-serbuan-teritorial-di-dekat-rumah-prabowo-ini-sederet-aksinya
-26. https://www.liputan6.com/news/read/6167417/rakernas-dekranas-2025-tri-tito-tekankan-peran-penting-kerajinan-nasional-bagi-kesejahteraan-rakyat
-27. https://www.liputan6.com/news/read/6167416/curhat-farida-ditunjuk-jadi-wakil-menteri-koperasi-judulnya-mendadak-wamen
-28. https://www.liputan6.com/news/read/6167402/apresiasi-adhyaksa-awards-2025-mendagri-tekankan-pentingnya-kompetisi-sehat-bagi-jaksa
-29. https://www.liputan6.com/news/read/6167392/ada-demo-cek-rute-rute-pengalihan-arus-depan-gedung-dpr-hari-ini
-30. https://www.liputan6.com/news/read/6167389/mengenal-brigade-parako-2-pasgat-pasukan-elite-yang-bakal-meriahkan-hut-ke-80-tni
-31. https://www.liputan6.com/news/read/6167362/lesehan-di-sawah-bareng-petani-hasto-bawa-pesan-megawati-jaga-lahan-subur-agar-tak-jadi-kawasan-industri
-32. https://www.liputan6.com/news/read/6167342/blak-blakan-isran-noor-soal-kasus-dugaan-korupsi-dana-hibah-dbon
-33. https://www.liputan6.com/news/read/6167279/kpk-turun-tangan-jawab-aduan-wabup-jember-yang-laporkan-bupatinya-sendiri
-34. https://www.liputan6.com/news/read/6167290/kapolda-metro-ke-polisi-jaga-demo-di-dpr-gas-air-mata-hanya-boleh-atas-perintah-saya-jangan-main-tembak
-35. https://www.liputan6.com/news/read/6167294/reaksi-polda-metro-usai-istri-gus-dur-hingga-mantan-menag-jamin-penangguhan-penahanan-delpedro-cs
-36. https://www.liputan6.com/news/read/6167276/daftar-negara-yang-mengakui-dan-tidak-mengakui-palestina
-37. https://www.liputan6.com/news/read/6167256/ada-demo-hari-tani-di-dpr-begini-cara-polisi-cegah-masuknya-penyusup-berpotensi-tebar-provokasi
-38. https://www.liputan6.com/news/read/6167227/aksi-demo-saat-hari-tani-nasional-rabu-24-september-2025-ribuan-personel-disiagakan
-39. https://www.liputan6.com/news/read/6167211/duduk-satu-meja-dengan-prabowo-dan-erdogan-donald-trump-kita-akan-akhiri-perang-di-gaza
-40. https://www.liputan6.com/news/read/6167156/hari-tani-nasional-24-september-momentum-reforma-agraria-hilirisasi-hingga-lumbung-pangan
-41. https://www.liputan6.com/news/read/6167189/prabowo-subianto-profil-lengkap-dan-kiprah-sebagai-presiden-ri-ke-8
-42. https://www.liputan6.com/news/read/6167193/hari-tani-nasional-2025-begini-makna-dan-sejarahnya
-43. https://www.liputan6.com/news/read/6167173/bobby-nasution-wujudkan-uhc-di-sumut-berobat-cukup-tunjukkan-ktp
-44. https://www.liputan6.com/news/read/6167171/top-3-news-istri-gus-dur-hingga-mantan-menag-jadi-penjamin-penangguhan-penahanan-delpedro-cs
-45. https://www.liputan6.com/news/read/6167115/layanan-samsat-keliling-hadir-di-14-wilayah-jadetabek-cek-selengkapnya
-46. https://www.liputan6.com/news/read/6167144/ganjil-genap-jakarta-rabu-24-september-2025-periksa-lagi-pelat-kendaraanmu
-47. https://www.liputan6.com/news/read/6167054/kenapa-prabowo-minta-telur-ceplok-bukan-didadar-dalam-menu-mbg
-48. https://www.liputan6.com/news/read/6167108/prakiraan-cuaca-bmkg-sebagian-jakarta-diguyur-hujan-malam-nanti-rabu-24-september-2025
-49. https://www.liputan6.com/news/read/6167058/24-september-diperingati-sebagai-hari-apa-berikut-daftarnya
-50. https://www.liputan6.com/news/read/6166907/temuan-penting-di-balik-keracunan-massal-makan-bergizi-gratis
-51. https://www.liputan6.com/news/read/6167102/presiden-prabowo-dapat-apresiasi-pemimpin-dunia-usai-berpidato-di-sidang-umum-pbb
-52. https://www.liputan6.com/news/read/6167096/presiden-prabowo-tegaskan-komitmen-indonesia-dukung-pbb
-53. https://www.liputan6.com/news/read/6167028/usai-viral-wali-kota-tangsel-tak-kapok-unggah-laporan-anggaran-ke-publik
-54. https://www.liputan6.com/news/read/6167019/warga-kedoya-selatan-geger-ibu-rumah-tangga-ditemukan-tewas-diduga-dibunuh-suami
-55. https://www.liputan6.com/news/read/6166997/6-fakta-terkait-ratusan-siswa-di-garut-diduga-keracunan-mbg-polisi-turun-tangan-dapur-penyedia-ditutup
-56. https://www.liputan6.com/news/read/6167945/mendagri-ingatkan-pemda-jangan-biarkan-inflasi-ganggu-daya-beli
-57. https://www.liputan6.com/news/read/6167064/di-sidang-umum-pbb-prabowo-sebut-indonesia-akan-bangun-giant-sea-wall-480-kilometer
-58. https://www.liputan6.com/news/read/6167061/prabowo-di-sidang-umum-pbb-singgung-kondisi-dunia-dilanda-konflik-hingga-genosida
-59. https://www.liputan6.com/news/read/6167059/prabowo-di-sidang-umum-pbb-minta-dunia-tak-diam-lihat-penderitaan-palestina
-60. https://www.liputan6.com/news/read/6167053/sidang-umum-pbb-prabowo-pamer-ri-capai-swasembada-beras-dan-ekspor-ke-palestina
+1. https://www.liputan6.com/news/read/6173758/ditjenpas-kembali-pindahkan-41-napi-risiko-tinggi-dari-berbagai-daerah-ke-nusakambangan
+2. https://www.liputan6.com/news/read/6173787/konsultan-hukum-cabuli-anak-di-bawah-umur-rayu-korban-dengan-uang-dan-ponsel
+3. https://www.liputan6.com/news/read/6173778/insiden-wartawan-dicekik-saat-liput-dapur-mbg-berujung-damai-pelaku-akui-khilaf
+4. https://www.liputan6.com/news/read/6173782/detik-detik-api-berkobar-di-hunian-pekerja-konstruksi-ikn-seluruh-penghuni-berhasil-dievakuasi
+5. https://www.liputan6.com/news/read/6173775/kebakaran-hunian-pekerja-konstruksi-ikn-terjadi-di-tower-14-api-berhasil-dipadamkan
+6. https://www.liputan6.com/news/read/6173741/sikap-ketua-dpr-puan-maharani-saat-indonesia-raya-dinilai-sesuai-aturan-tak-harus-hormat-militer
+7. https://www.liputan6.com/news/read/6173752/emak-emak-nekat-siram-polisi-pakai-bensin-depan-mapolres-sragen
+8. https://www.liputan6.com/news/read/6173725/jelang-72-jam-pencarian-kepala-basarnas-minta-area-reruntuhan-pesantren-al-khoziny-dikosongkan
+9. https://www.liputan6.com/news/read/6173791/sas-institute-dorong-optimisme-atas-program-mbg-diyakini-bisa-perkuat-ketahanan-pangan
+10. https://www.liputan6.com/news/read/6173682/gara-gara-hutang-piutang-pemilik-agen-gas-di-jakbar-tewas-ditikam-kerabatnya-sendiri
+11. https://www.liputan6.com/news/read/6173670/kubu-mardiono-juga-klaim-telah-serahkan-hasil-muktamar-x-ppp-ke-kemenkum
+12. https://www.liputan6.com/news/read/6173648/dpr-usul-dapur-mbg-dibangun-di-sekolah-orang-tua-bisa-terlibat-belanjanya-di-pasar-terdekat
+13. https://www.liputan6.com/news/read/6173635/kubu-agus-suparmanto-serahkan-hasil-muktamar-x-ppp-ke-kemenkum
+14. https://www.liputan6.com/news/read/6173633/begini-isi-peraturan-kapolri-nomor-4-tahun-2025-terkait-penindakan-aksi-penyerangan-anggota
+15. https://www.liputan6.com/news/read/6173613/dpr-bersama-pemerintah-dan-asosiasi-pengemudi-sepakat-bentuk-tim-penyusun-revisi-uu-llaj
+16. https://www.liputan6.com/news/read/6173598/kepala-bgn-jawab-usulan-anggota-dpr-hapus-kata-gratis-pada-mbg
+17. https://www.liputan6.com/news/read/6173594/satu-bulan-hilang-jejak-terakhir-farhan-di-kwitang
+18. https://www.liputan6.com/news/read/6173584/kawanan-emak-emak-jadi-copet-di-pasar-jambi-modusnya-pura-pura-beli-bawang-lalu-gasak-dompet-korban
+19. https://www.liputan6.com/news/read/6173575/lihat-cctv-dari-hp-ayah-di-depok-kaget-art-aniaya-dua-anak-balitanya
+20. https://www.liputan6.com/news/read/6173551/ketua-prodi-kedokteran-undip-divonis-2-tahun-penjara-karena-terbukti-peras-mahasiswa-ppds
+21. https://www.liputan6.com/news/read/6173494/mensos-dan-wamensos-hadiri-upacara-hari-kesaktian-pancasila-di-lubang-buaya
+22. https://www.liputan6.com/news/read/6173479/dedi-mulyadi-pemutihan-pajak-kendaraan-di-jabar-berakhir-lihat-dan-rasakan-hasilnya
+23. https://www.liputan6.com/news/read/6173482/sejarah-gempa-besar-di-sumenep-pernah-tewaskan-3-orang
+24. https://www.liputan6.com/news/read/6173417/anggota-dpr-ini-usul-kata-gratis-pada-mbg-dihapus-beberkan-alasannya
+25. https://www.liputan6.com/news/read/6173427/komplotan-begal-menyamar-jadi-debt-collector-modus-tagih-tunggakan-ke-korban-lalu-motor-dibawa-kabur
+26. https://www.liputan6.com/news/read/6173406/kisruh-dualisme-ppp-begini-kata-kementerian-hukum
+27. https://www.liputan6.com/news/read/6173411/sosok-lukmanul-hakim-ulama-yang-jadikan-sertifikasi-halal-senjata-umkm-kini-berpulang
+28. https://www.liputan6.com/news/read/6173385/aturan-uang-pensiun-anggota-dpr-digugat-ke-mk-jabat-5-tahun-dapat-pensiun-seumur-hidup
+29. https://www.liputan6.com/news/read/6173369/ada-peringatan-hut-ke-80-tni-di-monas-car-free-day-jakarta-5-oktober-2025-tetap-digelar
+30. https://www.liputan6.com/news/read/6173346/anggota-dpr-rapat-dengan-kepala-bgn-siapa-politisi-minta-dapur-tunjuk-hidungnya
+31. https://www.liputan6.com/news/read/6173343/dinas-kpkp-buruk-merak-di-rumah-bamsoet-tidak-termasuk-hewan-dilindungi
+32. https://www.liputan6.com/news/read/6173311/seorang-pria-di-cilincing-nekat-akhiri-hidupnya-diduga-frustasi-akibat-judi-online
+33. https://www.liputan6.com/news/read/6173312/kasus-keracunan-mbg-bgn-akui-banyak-sppg-belum-punya-sanitasi-yang-baik
+34. https://www.liputan6.com/news/read/6173320/kepala-bgn-minta-sppg-masak-menu-mbg-pakai-air-galon-cegah-keracunan-berulang
+35. https://www.liputan6.com/news/read/6173744/komisi-ii-soal-bobby-nasution-minta-truk-aceh-ganti-pelat-itu-upaya-dongkrak-pad
+36. https://www.liputan6.com/news/read/6173743/mbg-perlu-perbaikan-tata-kelola
+37. https://www.liputan6.com/news/read/6173266/wanita-melahirkan-bayi-di-toilet-oyo-suami-sirinya-usia-22-tahun-panik
+38. https://www.liputan6.com/news/read/6173269/prabowo-akan-terbitkan-perpres-tata-kelola-mbg-sppg-harus-punya-chef-terlatih-makanan-diuji-dulu
+39. https://www.liputan6.com/news/read/6173240/rapat-di-dpr-kepala-bgn-ungkap-75-kasus-keracunan-mbg-sejak-januari-dengan-korban-6517-siswa
+40. https://www.liputan6.com/news/read/6173223/hut-ke-80-tni-naik-transjakarta-mrt-dan-lrt-hanya-rp-80
+41. https://www.liputan6.com/news/read/6173742/peran-pemda-kawal-program-mbg-perlu-diperkuat
+42. https://www.liputan6.com/news/read/6173195/terungkap-penyebab-keracunan-massal-mbg-sppg-beli-bahan-dan-masak-makanan-tak-sesuai-standar
+43. https://www.liputan6.com/news/read/6173185/dewan-komisaris-taspen-luncurkan-tasboard-perkuat-transparansi-dan-efektivitas-pengawasan
+44. https://www.liputan6.com/news/read/6173172/logo-dan-tema-hut-tni-2025-simak-info-acara-puncaknya
+45. https://www.liputan6.com/news/read/6173154/cerita-udang-beku-terpapar-radiasi-berbahaya-dari-cikande
+46. https://www.liputan6.com/news/read/6173158/pramono-resmikan-taman-bugar-di-jakbar-hasil-serap-aspirasi-masyarakat
+47. https://www.liputan6.com/news/read/6173146/polisi-gagalkan-penyulundupan-16-cpmi-non-prosedural-2-pelaku-dibekuk-di-soetta
+48. https://www.liputan6.com/news/read/6173140/musala-pesantren-al-khoziny-ambruk-dpr-minta-pemerintah-beri-pendampingan-pembangunan-di-ponpes
+49. https://www.liputan6.com/news/read/6173093/kasus-bocah-perempuan-tewas-membusuk-di-jakut-warga-lihat-wajah-korban-penuh-lebam-dan-sering-menangis
+50. https://www.liputan6.com/news/read/6173061/tragedi-ambruknya-musala-empat-lantai-di-ponpes-al-khoziny-sidoarjo-kronologi-dan-fakta-terbaru
+51. https://www.liputan6.com/news/read/6173035/taksi-online-parkir-3-hari-di-pinggir-jalan-sopirnya-ternyata-sudah-meninggal
+52. https://www.liputan6.com/news/read/6172925/top-3-news-kpk-sita-rp-13-miliar-dari-ilham-habibie-mobilnya-dikembalikan
+53. https://www.liputan6.com/news/read/6173009/kolonel-pnb-amry-taufany-jadi-komandan-upacara-peringatan-hari-kesaktian-pancasila-2025
+54. https://www.liputan6.com/news/read/6172972/kecanduan-handphone-remaja-indonesia-kesepian
+55. https://www.liputan6.com/news/read/6172993/prabowo-pimpin-upacara-peringatan-hari-kesaktian-pancasila-2025-di-lubang-buaya
+56. https://www.liputan6.com/news/read/6172970/diam-diam-prabowo-pantau-kinerja-menkeu-purbaya-via-medsos
+57. https://www.liputan6.com/news/read/6172948/pemerintah-pusat-pangkas-dana-transfer-apbd-dki-2026-terancam-anjlok-signifikan
+58. https://www.liputan6.com/news/read/6172924/awal-bulan-simak-aturan-ganjil-genap-yang-berlaku-rabu-1-oktober-2025
+59. https://www.liputan6.com/news/read/6172870/sehari-di-dapur-mbg-segi-antara-bekerja-mulai-tengah-malam-demi-makan-gratis-siswa-depok
 </pre></div>
 </div>
 </div>
@@ -683,422 +688,415 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/l
   <tbody>
     <tr>
       <th>0</th>
-      <td>Arus Lalin di Sekitar DPR Macet, Ini Penyebabnya</td>
-      <td>24 Sep 2025 21:02</td>
-      <td>banyak pengendara yang nekat menyerobot dari l...</td>
+      <td>Ditjenpas Kembali Pindahkan 41 Napi Risiko Tin...</td>
+      <td>01 Okt 2025 22:08</td>
+      <td>41 narapidana berisiko tinggi yang dipindahkan...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Sikap Kabareskrim Polri soal Permintaan Istri ...</td>
-      <td>24 Sep 2025 21:00</td>
-      <td>Kabareskrim Polri Komjen Syahardiantono mengat...</td>
+      <td>Konsultan Hukum Cabuli Anak di Bawah Umur, Ray...</td>
+      <td>01 Okt 2025 20:58</td>
+      <td>Parahnya lagi, bocah yang menjadi korban adala...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Cegah Kasus di Program MBG, Begini Cara SPPG P...</td>
-      <td>24 Sep 2025 20:50</td>
-      <td>Pengelola Satuan Pelayanan Pemenuhan Gizi (SPP...</td>
-      <td>News</td>
+      <td>Insiden Wartawan Dicekik Saat Liput Dapur MBG ...</td>
+      <td>01 Okt 2025 20:55</td>
+      <td>Kasus dugaan penganiayaan terhadap wartawan sa...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>959 Jadi Tersangka Kerusuhan di Demo Agustus, ...</td>
-      <td>24 Sep 2025 18:05</td>
-      <td>Polri mencatat tersangka kerusuhan jumlahnya m...</td>
-      <td>Peristiwa</td>
+      <td>Detik-Detik Api Berkobar di Hunian Pekerja Kon...</td>
+      <td>01 Okt 2025 20:54</td>
+      <td>Polisi sedang melakukan investigasi untuk meng...</td>
+      <td>Nasional</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Dasco Sebut Kementerian BUMN Akan Diubah Jadi ...</td>
-      <td>24 Sep 2025 18:01</td>
-      <td>Dasco menyebut, Kementerian BUMN akan diubah m...</td>
+      <td>Kebakaran Hunian Pekerja Konstruksi IKN Terjad...</td>
+      <td>01 Okt 2025 20:40</td>
+      <td>Hunian Pekerja Konstruksi Ibu Kota Nusantara (...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Kabar Gembira Buat Warga Jakarta, Pemprov Beri...</td>
-      <td>24 Sep 2025 17:47</td>
-      <td>Kebijakan ini sebagai bentuk komitmen pemerint...</td>
-      <td>Megapolitan</td>
+      <td>Sikap Ketua DPR Puan Maharani saat Indonesia R...</td>
+      <td>01 Okt 2025 20:32</td>
+      <td>Puan sempat menjadi sorotan publik karena tida...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Cara Mudah Cek Bansos September 2025: PKH dan ...</td>
-      <td>24 Sep 2025 17:18</td>
-      <td>Cari tahu cara cek bansos September 2025, term...</td>
+      <td>Emak-Emak Nekat Siram Polisi Pakai Bensin Depa...</td>
+      <td>01 Okt 2025 19:49</td>
+      <td>Akibat peristiwa tersebut, Bripka Johan harus ...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>KPK Cecar Biro Travel soal Cara Dapatkan Kuota...</td>
-      <td>24 Sep 2025 16:32</td>
-      <td>Terkait kasus ini, KPK sudah memeriksa mantan ...</td>
+      <td>Jelang 72 Jam Pencarian, Kepala Basarnas Minta...</td>
+      <td>01 Okt 2025 19:38</td>
+      <td>Untuk mendeteksi korban, Basarnas menggunakan ...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Peringatan Hari Tani, Ini Daftar Usulan PDIP a...</td>
-      <td>24 Sep 2025 16:16</td>
-      <td>Ketua DPP PDIP Bidang Pertanian dan Pangan Sad...</td>
+      <td>SAS Institute Dorong Optimisme atas Program MB...</td>
+      <td>01 Okt 2025 19:03</td>
+      <td>Sekretaris Eksekutif Said Aqil Sirodj (SAS) In...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Kepala BGN Minta SPPG Perbaiki Pola Masak Imba...</td>
-      <td>24 Sep 2025 16:16</td>
-      <td>Permintaan ini imbas meningkatnya kasus keracu...</td>
+      <td>Gara-Gara Hutang Piutang, Pemilik Agen Gas di ...</td>
+      <td>01 Okt 2025 18:40</td>
+      <td>Agen gas elpiji ditemukan tewas di Jalan Patra...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>Diikuti 27 Ribu Peserta, Wondr Jakarta Running...</td>
-      <td>24 Sep 2025 16:15</td>
-      <td>Antusiasme publik cukup besar dengan lebih dar...</td>
-      <td>Peristiwa</td>
+      <td>Kubu Mardiono Juga Klaim Telah Serahkan Hasil ...</td>
+      <td>01 Okt 2025 18:30</td>
+      <td>Politikus PPP Rapih Herdiansyah mengatakan, pi...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>Korban Keracunan MBG di Cipongkor Bandung Bara...</td>
-      <td>24 Sep 2025 16:01</td>
-      <td>Korban keracunan massal akibat Makan Bergizi G...</td>
-      <td>Peristiwa</td>
+      <td>DPR Usul Dapur MBG Dibangun di Sekolah: Orang ...</td>
+      <td>01 Okt 2025 18:05</td>
+      <td>Wakil Ketua Komisi IX DPR, Charles Honoris mem...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>Cak Imin: Hanya Prabowo, Presiden Setelah Bung...</td>
-      <td>24 Sep 2025 15:21</td>
-      <td>Ketua Umum Partai Kebangkitan Bangsa (PKB) Muh...</td>
-      <td>Peristiwa</td>
+      <td>Kubu Agus Suparmanto Serahkan Hasil Muktamar X...</td>
+      <td>01 Okt 2025 17:51</td>
+      <td>Yasin mengatakan, sebelum mendaftar pihaknya t...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>Hari Tani, GMNI Suarakan Marhaenisme Lahir dar...</td>
-      <td>24 Sep 2025 15:09</td>
-      <td>Ketua Umum DPP GMNI Muhammad Risyad Fahlefi, m...</td>
+      <td>Begini Isi Peraturan Kapolri Nomor 4 Tahun 202...</td>
+      <td>01 Okt 2025 17:42</td>
+      <td>Kapolri Jenderal Listyo Sigit Prabowo menerbit...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>Peringati Hari Tani, Cak Imin: Maaf 27 Tahun B...</td>
-      <td>24 Sep 2025 15:04</td>
-      <td>Cak Imin berharap, semoga permohonan maaf disa...</td>
+      <td>DPR Bersama Pemerintah dan Asosiasi Pengemudi ...</td>
+      <td>01 Okt 2025 17:30</td>
+      <td>DPR bersama pemerintah, dan asosiasi pengemudi...</td>
       <td>Politik</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>Pramono Tegaskan Jakarta Masih Berstatus Ibu K...</td>
-      <td>24 Sep 2025 14:51</td>
-      <td>Sesuai Undang-Undang Nomor 2 Tahun 2024, Jakar...</td>
-      <td>Megapolitan</td>
+      <td>Kepala BGN Jawab Usulan Anggota DPR Hapus Kata...</td>
+      <td>01 Okt 2025 17:09</td>
+      <td>Menurut anggota DPR RI, kata gratis pada MBG b...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>Marak Keracunan Massal MBG, DPR Usul BGN Gande...</td>
-      <td>24 Sep 2025 14:44</td>
-      <td>Wakil Ketua Komisi X DPR RI Lalu Hadrian Irfan...</td>
+      <td>Satu Bulan Hilang, Jejak Terakhir Farhan di Kw...</td>
+      <td>01 Okt 2025 17:06</td>
+      <td>Farhan bukan seorang aktivis. Hari itu, Farhan...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>5 Biro Perjalanan Dicecar KPK Terkait Perminta...</td>
-      <td>24 Sep 2025 14:39</td>
-      <td>Permintaan uang itu diduga dilakukan pejabat K...</td>
+      <td>Kawanan Emak-Emak jadi Copet di Pasar Jambi, M...</td>
+      <td>01 Okt 2025 16:58</td>
+      <td>Polisi mengamankan komplotan pencopet yang dil...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>Cak Imin soal Banyak Siswa Keracunan MBG: Saya...</td>
-      <td>24 Sep 2025 14:24</td>
-      <td>BGN merupakan penanggung jawab program Makan B...</td>
-      <td>Peristiwa</td>
+      <td>Lihat CCTV dari HP, Ayah di Depok Kaget ART An...</td>
+      <td>01 Okt 2025 16:45</td>
+      <td>Made menjelaskan, saat kejadian kedua orang tu...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>Belanja Rokok Lebih Besar Daripada Beli Beras,...</td>
-      <td>24 Sep 2025 14:10</td>
-      <td>Ia lalu menjelaskan, pemerintah memandang kebi...</td>
+      <td>Ketua Prodi Kedokteran Undip Divonis 2 Tahun P...</td>
+      <td>01 Okt 2025 16:30</td>
+      <td>Putusan yang dibacakan Hakim Ketua Muhammad Dj...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>Pidato Prabowo di Sidang PBB: Mari Gunakan Sai...</td>
-      <td>24 Sep 2025 14:03</td>
-      <td>Presiden Prabowo Subianto menyampaikan pidaton...</td>
-      <td>Peristiwa</td>
+      <td>Mensos dan Wamensos Hadiri Upacara Hari Kesakt...</td>
+      <td>01 Okt 2025 15:55</td>
+      <td>Momen Menteri Sosial Gus Ipul bersama Wakil Me...</td>
+      <td>News</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>PDIP Tangsel Rayakan Hari Tani Nasional, Doron...</td>
-      <td>24 Sep 2025 14:00</td>
-      <td>PDIP Tangsel menegaskan pentingnya kedaulatan ...</td>
+      <td>Dedi Mulyadi: Pemutihan Pajak Kendaraan di Jab...</td>
+      <td>01 Okt 2025 15:32</td>
+      <td>Pemda Provinsi Jawa Barat secara resmi mengakh...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>Memilukan, Begini Kondisi Bocah Perempuan 8 Ta...</td>
-      <td>24 Sep 2025 13:49</td>
-      <td>Jasad anak perempuan berinisial AR (8) ditemuk...</td>
+      <td>Sejarah Gempa Besar di Sumenep, Pernah Tewaska...</td>
+      <td>01 Okt 2025 15:29</td>
+      <td>Sejarah mencatat setidaknya tujuh kali gempa m...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>Legislator PKB Dorong Pemprov DKI Lengkapi Sar...</td>
-      <td>24 Sep 2025 13:00</td>
-      <td>Menurutnya, hal yang melatarbelakangi terjadi ...</td>
-      <td>Megapolitan</td>
+      <td>Anggota DPR Ini Usul Kata Gratis pada MBG Diha...</td>
+      <td>01 Okt 2025 15:05</td>
+      <td>Anggota Komisi IX DPR Irma Suryani Chaniago me...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>TNI Gencarkan 'Serbuan Teritorial' di Dekat Ru...</td>
-      <td>24 Sep 2025 12:45</td>
-      <td>TNI menyelesaikan Program Serbuan Teritorial T...</td>
+      <td>Komplotan Begal Menyamar jadi Debt Collector, ...</td>
+      <td>01 Okt 2025 15:01</td>
+      <td>Komplotan begal ini mengintai pengendara yang ...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>25</th>
-      <td>Rakernas Dekranas 2025, Tri Tito Tekankan Pera...</td>
-      <td>24 Sep 2025 12:32</td>
-      <td>Rakernas Dekranas 2025 mengusung tema “Optimal...</td>
-      <td>News</td>
+      <td>Kisruh Dualisme PPP, Begini Kata Kementerian H...</td>
+      <td>01 Okt 2025 14:48</td>
+      <td>Pemerintah meminta Partai Persatuan Pembanguna...</td>
+      <td>Politik</td>
     </tr>
     <tr>
       <th>26</th>
-      <td>Curhat Farida Ditunjuk jadi Wakil Menteri Kope...</td>
-      <td>24 Sep 2025 12:21</td>
-      <td>Farida Farichah resmi dilantik sebagai Wakil M...</td>
+      <td>Sosok Lukmanul Hakim, Ulama yang Jadikan Serti...</td>
+      <td>01 Okt 2025 14:40</td>
+      <td>Ketua MUI Bidang Ekonomi, Lukmanul Hakim menin...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>Apresiasi Adhyaksa Awards 2025, Mendagri Tekan...</td>
-      <td>24 Sep 2025 12:16</td>
-      <td>Ajang Adhyaksa Awards 2025 menjadi bentuk peng...</td>
-      <td>News</td>
+      <td>Aturan Uang Pensiun Anggota DPR Digugat ke MK:...</td>
+      <td>01 Okt 2025 14:35</td>
+      <td>Dua warga negara, Lita Linggayani Gading dan S...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>Ada Demo, Cek Rute Rute Pengalihan Arus Depan ...</td>
-      <td>24 Sep 2025 11:55</td>
-      <td>Unjuk rasa digelar memperingati Hari Tani Nasi...</td>
-      <td>Megapolitan</td>
+      <td>Ada Peringatan HUT ke-80 TNI di Monas, Car Fre...</td>
+      <td>01 Okt 2025 14:23</td>
+      <td>Pemprov DKI Jakarta menegaskan bahwa pelaksana...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>Mengenal Brigade Parako 2 Pasgat, Pasukan Elit...</td>
-      <td>24 Sep 2025 11:55</td>
-      <td>Para pasukan Parako 2 Pasgat itu akan terlibat...</td>
+      <td>Anggota DPR Rapat dengan Kepala BGN: Siapa Pol...</td>
+      <td>01 Okt 2025 14:01</td>
+      <td>Sahidin mendesak BGN untuk menyebut nama secar...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>30</th>
-      <td>Lesehan di Sawah Bareng Petani, Hasto Bawa Pes...</td>
-      <td>24 Sep 2025 11:31</td>
-      <td>Sekjen PDIP Hasto Kristiyanto menegaskan panga...</td>
-      <td>Peristiwa</td>
+      <td>Dinas KPKP: Buruk Merak di Rumah Bamsoet Tidak...</td>
+      <td>01 Okt 2025 13:45</td>
+      <td>Kepala Dinas KPKP DKI Jakarta Hasudungan Sidab...</td>
+      <td>Warta DPR</td>
     </tr>
     <tr>
       <th>31</th>
-      <td>Blak-blakan Isran Noor soal Kasus Dugaan Korup...</td>
-      <td>24 Sep 2025 11:10</td>
-      <td>Dia mengaku sudah diperiksa Kejaksaan Tinggi (...</td>
-      <td>Peristiwa</td>
+      <td>Seorang Pria di Cilincing Nekat Akhiri Hidupny...</td>
+      <td>01 Okt 2025 13:45</td>
+      <td>Polisi tidak menemukan tanda kekerasan, sement...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>32</th>
-      <td>KPK Turun Tangan, Jawab Aduan Wabup Jember yan...</td>
-      <td>24 Sep 2025 10:30</td>
-      <td>Komisi Pemberantasan Korupsi (KPK) mengonfirma...</td>
+      <td>Kasus Keracunan MBG, BGN Akui Banyak SPPG Belu...</td>
+      <td>01 Okt 2025 13:37</td>
+      <td>BGN juga menginstruksikan penggunaan air galon...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>33</th>
-      <td>Kapolda Metro ke Polisi Jaga Demo di DPR: Gas ...</td>
-      <td>24 Sep 2025 10:29</td>
-      <td>Sebanyak 9.498 personel gabungan dikerahkan un...</td>
+      <td>Kepala BGN Minta SPPG Masak Menu MBG Pakai Air...</td>
+      <td>01 Okt 2025 13:35</td>
+      <td>Instruksi tersebut dikeluarkan karena masih ba...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>34</th>
-      <td>Reaksi Polda Metro Usai Istri Gus Dur hingga M...</td>
-      <td>24 Sep 2025 10:19</td>
-      <td>Polda Metro menegaskan proses hukum terhadap D...</td>
-      <td>Megapolitan</td>
+      <td>Komisi II soal Bobby Nasution Minta Truk Aceh ...</td>
+      <td>01 Okt 2025 13:16</td>
+      <td>Menurut Rifqinizamy, langkah tersebut merupaka...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>35</th>
-      <td>Daftar Negara yang Mengakui dan Tidak Mengakui...</td>
-      <td>24 Sep 2025 10:04</td>
-      <td>Sejumlah negara mulai mengakui Palestina. Gelo...</td>
+      <td>MBG Perlu Perbaikan Tata Kelola</td>
+      <td>01 Okt 2025 13:02</td>
+      <td>Tantangan program Makan Bergizi Gratis (MBG) m...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>36</th>
-      <td>Ada Demo Hari Tani di DPR, Begini Cara Polisi ...</td>
-      <td>24 Sep 2025 09:51</td>
-      <td>Polda Metro Jaya mewanti-wanti agar demo mempe...</td>
+      <td>Wanita Melahirkan Bayi di Toilet OYO, Suami Si...</td>
+      <td>01 Okt 2025 12:55</td>
+      <td>Dalam kondisi panik, suami siri lantas menghub...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>37</th>
-      <td>Aksi Demo Saat Hari Tani Nasional Rabu 24 Sept...</td>
-      <td>24 Sep 2025 09:35</td>
-      <td>Ribuan personel gabungan dikerahkan untuk meng...</td>
+      <td>Prabowo akan Terbitkan Perpres Tata Kelola MBG...</td>
+      <td>01 Okt 2025 12:55</td>
+      <td>Presiden Prabowo Subianto akan mengeluarkan Pe...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>38</th>
-      <td>Duduk Satu Meja dengan Prabowo dan Erdogan, Do...</td>
-      <td>24 Sep 2025 09:20</td>
-      <td>Presiden Prabowo Subianto menghadiri Multilate...</td>
+      <td>Rapat di DPR, Kepala BGN Ungkap 75 Kasus Kerac...</td>
+      <td>01 Okt 2025 12:27</td>
+      <td>Badan Gizi Nasional (BGN) mencatat sebanyak 75...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>39</th>
-      <td>Hari Tani Nasional 24 September: Momentum Refo...</td>
-      <td>24 Sep 2025 09:00</td>
-      <td>Mendekati tepat setahun pemerintahan Presiden ...</td>
-      <td>Peristiwa</td>
+      <td>HUT ke-80 TNI: Naik Transjakarta, MRT, dan LRT...</td>
+      <td>01 Okt 2025 12:18</td>
+      <td>Gubernur DKI Jakarta Pramono Anung Wibowo meng...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>40</th>
-      <td>Prabowo Subianto: Profil Lengkap dan Kiprah Se...</td>
-      <td>24 Sep 2025 08:54</td>
-      <td>Prabowo Subianto kini resmi memegang tampuk ke...</td>
-      <td>News</td>
+      <td>Peran Pemda Kawal Program MBG Perlu Diperkuat</td>
+      <td>01 Okt 2025 12:00</td>
+      <td>Darmawan menilai, keterlibatan penuh Pemda men...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>41</th>
-      <td>Hari Tani Nasional 2025, Begini Makna dan Seja...</td>
-      <td>24 Sep 2025 08:47</td>
-      <td>Setiap tanggal 24 September, Indonesia memperi...</td>
+      <td>Terungkap Penyebab Keracunan Massal MBG: SPPG ...</td>
+      <td>01 Okt 2025 11:50</td>
+      <td>Kepala Badan Gizi Nasional (BGN), Dadan Hinday...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>42</th>
-      <td>Bobby Nasution Wujudkan UHC di Sumut, Berobat ...</td>
-      <td>24 Sep 2025 08:38</td>
-      <td>Keberhasilan ini tak lepas dari kepemimpinan m...</td>
+      <td>Dewan Komisaris TASPEN Luncurkan TASBOARD, Per...</td>
+      <td>01 Okt 2025 11:38</td>
+      <td>Dewan Komisaris TASPEN resmi memperkenalkan TA...</td>
       <td>News</td>
     </tr>
     <tr>
       <th>43</th>
-      <td>Top 3 News: Istri Gus Dur hingga Mantan Menag ...</td>
-      <td>24 Sep 2025 08:35</td>
-      <td>Mantan Menteri Agama Lukman Hakim Saifuddin me...</td>
+      <td>Logo dan Tema HUT TNI 2025, Simak Info Acara P...</td>
+      <td>01 Okt 2025 11:33</td>
+      <td>Peringatan Hari Ulang Tahun (HUT) ke-80 TNI pa...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>44</th>
-      <td>Layanan Samsat Keliling Hadir di 14 Wilayah Ja...</td>
-      <td>24 Sep 2025 08:00</td>
-      <td>Polda Metro Jaya menyediakan layanan sistem ad...</td>
+      <td>Cerita Udang Beku Terpapar Radiasi Berbahaya d...</td>
+      <td>01 Okt 2025 11:18</td>
+      <td>Tim khusus Cesium 137 sudah beberapa pekan ter...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>45</th>
-      <td>Ganjil Genap Jakarta Rabu 24 September 2025, P...</td>
-      <td>24 Sep 2025 07:20</td>
-      <td>Aturan ganjil genap Jakarta tetap berlaku pada...</td>
-      <td>Peristiwa</td>
+      <td>Pramono Resmikan Taman Bugar di Jakbar, Hasil ...</td>
+      <td>01 Okt 2025 11:09</td>
+      <td>Menurut dia, pembangunan taman tersebut merupa...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>46</th>
-      <td>Kenapa Prabowo Minta Telur Ceplok Bukan Didada...</td>
-      <td>24 Sep 2025 07:00</td>
-      <td>Disebutkan, Prabowo hanya memperbolehkan dua c...</td>
+      <td>Polisi Gagalkan Penyulundupan 16 CPMI Non Pros...</td>
+      <td>01 Okt 2025 10:48</td>
+      <td>Para CPMI ilegal ini dikirim ke luar negeri de...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>47</th>
-      <td>Prakiraan Cuaca BMKG: Sebagian Jakarta Diguyur...</td>
-      <td>24 Sep 2025 06:45</td>
-      <td>Badan Meteorologi, Klimatologi, dan Geofisika ...</td>
+      <td>Musala Pesantren Al Khoziny Ambruk, DPR Minta ...</td>
+      <td>01 Okt 2025 10:03</td>
+      <td>Kabar duka menyelimuti Ponpes Al Khoziny Sidoa...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>48</th>
-      <td>24 September Diperingati Sebagai Hari Apa? Ber...</td>
-      <td>24 Sep 2025 06:30</td>
-      <td>Tanggal 24 September memiliki makna penting ka...</td>
+      <td>Kasus Bocah Perempuan Tewas Membusuk di Jakut,...</td>
+      <td>01 Okt 2025 09:58</td>
+      <td>Polisi memeriksa sejumlah saksi untuk mengungk...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>49</th>
-      <td>Temuan Penting di Balik Keracunan Massal Makan...</td>
-      <td>24 Sep 2025 06:13</td>
-      <td>Kasus keracunan massal yang terjadi dalam prog...</td>
+      <td>Tragedi Ambruknya Musala Empat Lantai di Ponpe...</td>
+      <td>01 Okt 2025 09:38</td>
+      <td>Peristiwa nahas ini mengakibatkan tiga santri ...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>50</th>
-      <td>Presiden Prabowo Dapat Apresiasi Pemimpin Duni...</td>
-      <td>24 Sep 2025 06:00</td>
-      <td>Presiden Prabowo Subianto mendapat respons pos...</td>
+      <td>Taksi Online Parkir 3 Hari di Pinggir Jalan, S...</td>
+      <td>01 Okt 2025 09:32</td>
+      <td>Warga curiga dengan sebuah mobil yang sejak be...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>51</th>
-      <td>Presiden Prabowo Tegaskan Komitmen Indonesia D...</td>
-      <td>24 Sep 2025 05:30</td>
-      <td>Presiden Prabowo Subianto menegaskan, Indonesi...</td>
+      <td>Top 3 News: KPK Sita Rp 1,3 Miliar dari Ilham ...</td>
+      <td>01 Okt 2025 08:30</td>
+      <td>Juru bicara Komisi Pemberantasan Korupsi (KPK)...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>52</th>
-      <td>Usai Viral, Wali Kota Tangsel Tak Kapok Unggah...</td>
-      <td>24 Sep 2025 05:05</td>
-      <td>Wali Kota Tangsel, Benyamin Davnie mengaku tak...</td>
-      <td>Megapolitan</td>
+      <td>Kolonel Pnb. Amry Taufany Jadi Komandan Upacar...</td>
+      <td>01 Okt 2025 08:21</td>
+      <td>Dia merupakan lulusan Akademi Angkatan Udara t...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>53</th>
-      <td>Warga Kedoya Selatan Geger, Ibu Rumah Tangga D...</td>
-      <td>24 Sep 2025 03:02</td>
-      <td>Warga Jalan Pandan II, Kedoya Selatan, Jakarta...</td>
-      <td>Megapolitan</td>
+      <td>Kecanduan Handphone, Remaja Indonesia Kesepian</td>
+      <td>01 Okt 2025 08:00</td>
+      <td>Dari total 68 juta anak usia 10–24 tahun di In...</td>
+      <td>Peristiwa</td>
     </tr>
     <tr>
       <th>54</th>
-      <td>6 Fakta Terkait Ratusan Siswa di Garut Diduga ...</td>
-      <td>24 Sep 2025 02:06</td>
-      <td>Ratusan siswa di Kecamatan Kadungora, Kabupate...</td>
+      <td>Prabowo Pimpin Upacara Peringatan Hari Kesakti...</td>
+      <td>01 Okt 2025 07:46</td>
+      <td>Jajar pasukan terlihat memasuki lapangan upaca...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>55</th>
-      <td>Mendagri Ingatkan Pemda: Jangan Biarkan Inflas...</td>
-      <td>24 Sep 2025 01:13</td>
-      <td>Mendagri menekankan agar pemda dengan inflasi ...</td>
+      <td>Diam-Diam Prabowo Pantau Kinerja Menkeu Purbay...</td>
+      <td>01 Okt 2025 07:29</td>
+      <td>Purbaya mengatakan Presiden mendukung penuh la...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>56</th>
-      <td>Di Sidang Umum PBB, Prabowo Sebut Indonesia Ak...</td>
-      <td>24 Sep 2025 00:54</td>
-      <td>Presiden Prabowo Subianto mengatakan Indonesia...</td>
-      <td>Peristiwa</td>
+      <td>Pemerintah Pusat Pangkas Dana Transfer, APBD D...</td>
+      <td>01 Okt 2025 07:08</td>
+      <td>Dengan pemangkasan dana transfer dari pemerint...</td>
+      <td>Megapolitan</td>
     </tr>
     <tr>
       <th>57</th>
-      <td>Prabowo di Sidang Umum PBB, Singgung Kondisi D...</td>
-      <td>24 Sep 2025 00:50</td>
-      <td>Presiden Prabowo Subianto mengatakan, saat ini...</td>
+      <td>Awal Bulan, Simak Aturan Ganjil Genap yang Ber...</td>
+      <td>01 Okt 2025 07:00</td>
+      <td>Memasuki bulan baru, aturan pembatasan kendara...</td>
       <td>Peristiwa</td>
     </tr>
     <tr>
       <th>58</th>
-      <td>Prabowo di Sidang Umum PBB, Minta Dunia Tak Di...</td>
-      <td>24 Sep 2025 00:40</td>
-      <td>Presiden Prabowo Subianto mendesak negara-nega...</td>
-      <td>Peristiwa</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>Sidang Umum PBB, Prabowo Pamer RI Capai Swasem...</td>
-      <td>24 Sep 2025 00:00</td>
-      <td>Prabowo menyampaikan bahwa produksi beras Indo...</td>
+      <td>Sehari di Dapur MBG Segi Antara, Bekerja Mulai...</td>
+      <td>01 Okt 2025 06:31</td>
+      <td>Aktivitas produksi makan bergizi Gratis dimula...</td>
       <td>Peristiwa</td>
     </tr>
   </tbody>
@@ -1137,24 +1135,6 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codespace/.local/l
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="crawling_PTA.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Crawling PTA</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="PPWCrawlingLink.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Crawling Link</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
