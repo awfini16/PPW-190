@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Web_Usage_Mining';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="pagerank_link.html" />
+    <link rel="prev" title="Page Rank Link" href="pagerank_link.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -195,6 +195,7 @@
 <li class="toctree-l1"><a class="reference internal" href="LDA_gensim.html">LDA Gensim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NB_banding_svm.html"><strong>Analisa klasifikasikan Naive Bayes &amp; SVM</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="clustering_k_mens.html"><strong>Analisa clutering menggunakan K-Mens</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="pagerank_link.html">Page Rank Link</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Web Usage Mining</a></li>
 </ul>
 
@@ -916,7 +917,7 @@ Pratinjau data:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari data.csv...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\3944447601.py:10: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-3944447601.py:10: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;, index_col=0)
 </pre></div>
 </div>
@@ -1021,7 +1022,7 @@ Pratinjau data yang telah difilter:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari html_requests_only_NASA.csv...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\1600313524.py:9: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-1600313524.py:9: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;)
 </pre></div>
 </div>
@@ -1088,15 +1089,15 @@ Pratinjau data yang telah difilter:
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari status_200_only_NASA.csv...
-
-Memfilter data untuk baris di mana &#39;method&#39; adalah &#39;GET&#39;...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\3473009687.py:12: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-3473009687.py:12: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berhasil memfilter data dan menyimpannya ke method_get_only_NASA.csv.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;method&#39; adalah &#39;GET&#39;...
+
+Berhasil memfilter data dan menyimpannya ke method_get_only_NASA.csv.
 Pratinjau data yang telah difilter:
   Unnamed: 0         host       time method  \
 0          0  ***.novo.dk  805465029    GET   
@@ -1162,15 +1163,16 @@ Pratinjau data yang telah difilter:
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari method_get_only_NASA.csv...
-Format asli (baris pertama): 805465029
-Mengonversi kolom &#39;time&#39; (Unix timestamp) ke format Datetime...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\3743564732.py:11: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-3743564732.py:11: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berhasil mengonversi data waktu dan menyimpannya ke time_converted_NASA.csv.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Format asli (baris pertama): 805465029
+Mengonversi kolom &#39;time&#39; (Unix timestamp) ke format Datetime...
+
+Berhasil mengonversi data waktu dan menyimpannya ke time_converted_NASA.csv.
 Pratinjau data yang telah diubah (lihat kolom baru &#39;datetime_readable&#39;):
   Unnamed: 0         host       time method  \
 0          0  ***.novo.dk  805465029    GET   
@@ -1269,7 +1271,7 @@ Pratinjau data yang telah diubah (lihat kolom baru &#39;datetime_readable&#39;):
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari time_converted_NASA.csv...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\1479576779.py:16: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-1479576779.py:16: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;, parse_dates=[col_time])
 </pre></div>
 </div>
@@ -1371,7 +1373,7 @@ Pratinjau data baru (menampilkan kolom yang Anda minta):
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari time_converted_NASA.csv...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Mukti Hendra\AppData\Local\Temp\ipykernel_5700\334754223.py:14: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-334754223.py:14: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
   df = pd.read_csv(file_name, sep=&#39;;&#39;, parse_dates=[col_time])
 </pre></div>
 </div>
@@ -1440,7 +1442,7 @@ Pratinjau data baru (sekarang dengan 4 kolom):
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Page Rank Link</p>
       </div>
     </a>
 </div>
